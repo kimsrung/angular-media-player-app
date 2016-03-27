@@ -198,7 +198,7 @@ module.exports = function(grunt) {
                     'bower_components/angular-media-player/dist/angular-media-player.min.js',
                     'bower_components/raphael/raphael-min.js',
                     'bower_components/underscore/underscore-min.js',
-                    'bower_components/jqvmap/jqvmap/jquery.vmap.min.js',
+                    'bower_components/jqvmap/dist/jquery.vmap.min.js',
                     'bower_components/angular-scroll/angular-scroll.min.js',
                     'bower_components/html5shiv/dist/html5shiv.min.js',
                     'scripts/angular-dragdrop.js',

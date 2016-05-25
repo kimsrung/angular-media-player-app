@@ -52,6 +52,8 @@ var app = angular.module("app", ["ngRoute", "ngAnimate","app.config", "ui.bootst
               templateUrl: "app/views/playlist/artists-list.html"
             }).when("/albums", {
               templateUrl: "app/views/playlist/albums.html"
+            }).when("/album/:title", {
+              templateUrl: "app/views/playlist/album.html"
             }).when("/genres", {
               templateUrl: "app/views/playlist/genres.html"
             }).when("/forms/elements", {

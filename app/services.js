@@ -119,7 +119,52 @@ angular.module("app.ui.services", []).factory("loggit", [
     return GenresListingObj;
 
 
-  }).factory("ArtistSrv",
+  }).factory("AlbumSrv",
+  function($http) {
+
+    /**************************
+     Gets artists with all songs from the "Server"
+     **************************/
+
+    var PlayListObj = {},
+      albums = [];
+
+    /**************************
+     Get data from the .json files (Replace by your own webserver)
+     **************************/
+
+    PlayListObj.getSongs = function(callback){
+
+      $http.get('dist/data/albumsMusic.json').success(function(data) {
+
+        albums = data;
+
+        PlayListObj.albums = albums;
+        callback(data);
+
+      });
+
+    };
+
+    PlayListObj.getAlbum = function(title,callback) {
+
+      PlayListObj.getSongs(function(data){
+
+        _.map(PlayListObj.albums, function(albumSongs){
+
+          if(albumSongs.url_name == title){
+            return callback(albumSongs);
+          }
+        });
+
+      });
+
+    };
+
+    return PlayListObj;
+
+  })
+  .factory("ArtistSrv",
   function($http) {
 
     /**************************

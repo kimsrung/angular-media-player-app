@@ -1,9 +1,7 @@
 
 /**************************
  App ui Services
-
  loggit - Creates a logit type message for all logging
-
  **************************/
 
 angular.module("app.ui.services", []).factory("loggit", [
@@ -359,7 +357,7 @@ angular.module("app.ui.services", []).factory("loggit", [
     return MENU_STATES;
 
 
-  }).factory("CreatePlaylistSrv",['$modal','$log','PlayListSrv','$location',function($modal,$log,PlayListSrv,$location) {
+  }).factory("CreatePlaylistSrv",['$uibModal','$log','PlayListSrv','$location',function($uibModal,$log,PlayListSrv,$location) {
 
     /**************************
      Provides a way to create a new playlist
@@ -369,7 +367,7 @@ angular.module("app.ui.services", []).factory("loggit", [
 
     CreatePlayListSrvObj.openCreateModal = function(song){
 
-     var modalInstance = $modal.open({
+     var modalInstance = $uibModal.open({
        templateUrl: 'app/views/forms/create_playlist.html',
        controller: 'CreatePlaylistInstanceCtrl',
        resolve: {

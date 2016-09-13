@@ -7,15 +7,11 @@ angular.module("app.controllers", [])
   .controller("AdminAppCtrl", ["$scope", "$location",
     function ($scope, $location) {
       $scope.checkIfOwnPage = function () {
-
         return _.contains(["/front", "/404", "/pages/500", "/pages/login", "/pages/signin", "/pages/signin1", "/pages/signin2", "/pages/signup", "/pages/signup1", "/pages/signup2", "/pages/forgot", "/pages/lock-screen"], $location.path());
-
       };
 
       $scope.checkIfFixedPage = function () {
-
         return _.contains(["/dashboard"], $location.path());
-
       };
 
       $scope.info = {
@@ -490,13 +486,13 @@ angular.module("app.ui.ctrls", []).controller("NotifyCtrl", ["$scope", "loggit",
     $scope.isCollapsed = !1;
   }
 ])
-  .controller("ModalDemoCtrl", ["$scope", "$modal", "$log",
-    function ($scope, $modal, $log) {
+  .controller("ModalDemoCtrl", ["$scope", "$uibModal", "$log",
+    function ($scope, $uibModal, $log) {
       $scope.items = ['item1', 'item2', 'item3'];
 
       $scope.open = function (size) {
 
-        var modalInstance = $modal.open({
+        var uibModalInstance = $uibModal.open({
           templateUrl: 'myModalContent.html',
           controller: 'ModalInstanceCtrl',
           size: size,
@@ -507,26 +503,26 @@ angular.module("app.ui.ctrls", []).controller("NotifyCtrl", ["$scope", "loggit",
           }
         });
 
-        modalInstance.result.then(function (selectedItem) {
+        uibModalInstance.result.then(function (selectedItem) {
           $scope.selected = selectedItem;
         }, function () {
           $log.info('Modal dismissed at: ' + new Date());
         });
       };
     }
-  ]).controller("ModalInstanceCtrl", ["$scope", "$modalInstance", "items",
-    function ($scope, $modalInstance, items) {
+  ]).controller("ModalInstanceCtrl", ["$scope", "$uibModalInstance", "items",
+    function ($scope, $uibModalInstance, items) {
       $scope.items = items;
       $scope.selected = {
         item: $scope.items[0]
       };
 
       $scope.ok = function () {
-        $modalInstance.close($scope.selected.item);
+        $uibModalInstance.close($scope.selected.item);
       };
 
       $scope.cancel = function () {
-        $modalInstance.dismiss('cancel');
+        $uibModalInstance.dismiss('cancel');
       };
     }
   ])
@@ -1026,8 +1022,8 @@ angular.module('app.music', ['mediaPlayer', 'ngDragDrop'])
         this.userPlaylist = _.without(this.userPlaylist, song);
       };
 
-    }]).controller("CreatePlaylistInstanceCtrl", ["$scope", "$modalInstance", 'playlistName', 'song', 'loggit',
-      function ($scope, $modalInstance, playlistName, song, loggit) {
+    }]).controller("CreatePlaylistInstanceCtrl", ["$scope", "$uibModalInstance", 'playlistName', 'song', 'loggit',
+      function ($scope, $uibModalInstance, playlistName, song, loggit) {
 
         $scope.playlistName = playlistName;
         $scope.song = song;
@@ -1035,16 +1031,16 @@ angular.module('app.music', ['mediaPlayer', 'ngDragDrop'])
         $scope.ok = function () {
 
           if ($scope.playlistName !== "") {
-            $modalInstance.close($scope);
+            $uibModalInstance.close($scope);
           }
           else {
-            $modalInstance.dismiss('cancel');
+            $uibModalInstance.dismiss('cancel');
             loggit.logError("Error! Could not create a playlist with no name..");
           }
         };
 
         $scope.cancel = function () {
-          $modalInstance.dismiss('cancel');
+          $uibModalInstance.dismiss('cancel');
         };
       }
     ]);

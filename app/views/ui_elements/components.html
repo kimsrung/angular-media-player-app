@@ -317,16 +317,16 @@
             <section class="panel panel-default">
                 <div class="panel-heading"><i class="fa fa-list panel-ico"></i>Popover</div>
                 <div class="panel-body text-center">
-                    <button popover-placement="top" popover-title="Title of tooltip here" popover="Tooltip On the Top!" popover-append-to-body="true" class="btn btn-width-long btn-primary btn-sp">Popover on Top</button>
+                    <button popover-placement="top" popover-title="Title of tooltip here" uib-popover="Tooltip On the Top!" popover-append-to-body="true" class="btn btn-width-long btn-primary btn-sp">Popover on Top</button>
                     <br>
-                    <button popover-placement="right" popover-title="Title of tooltip here" popover="Tooltip On the Right!" popover-append-to-body="true" class="btn btn-width-long btn-info btn-sp">Popover on Right</button>
+                    <button popover-placement="right" popover-title="Title of tooltip here" uib-popover="Tooltip On the Right!" popover-append-to-body="true" class="btn btn-width-long btn-info btn-sp">Popover on Right</button>
                     <br>
-                    <button popover-placement="bottom" popover-title="Title of tooltip here" popover="Tooltip On the Bottom!" popover-append-to-body="true" class="btn btn-width-long btn-success btn-sp">Popover on Bottom</button>
+                    <button popover-placement="bottom" popover-title="Title of tooltip here" uib-popover="Tooltip On the Bottom!" popover-append-to-body="true" class="btn btn-width-long btn-success btn-sp">Popover on Bottom</button>
                     <br>
-                    <button popover-placement="left" popover-title="Title of tooltip here" popover="Tooltip On the Left!" popover-append-to-body="true" class="btn btn-width-long btn-warning btn-sp">Popover on Left</button>
+                    <button popover-placement="left" popover-title="Title of tooltip here" uib-popover="Tooltip On the Left!" popover-append-to-body="true" class="btn btn-width-long btn-warning btn-sp">Popover on Left</button>
                     <br>
-                    <button popover="On mouse enter!" popover-trigger="mouseenter" class="btn btn-width-long btn-danger btn-sp">Popover on Mouseenter</button>
-                    <input type="text" value="Popover on Click" popover="Tooltip appears on focus! Click away and it will disapear..."  popover-trigger="focus" class="form-control">
+                    <button uib-popover="On mouse enter!" popover-trigger="mouseenter" class="btn btn-width-long btn-danger btn-sp">Popover on Mouseenter</button>
+                    <input type="text" value="Popover on Click" uib-popover="Tooltip appears on focus! Click away and it will disapear..."  popover-trigger="focus" class="form-control">
                 </div>
             </section>
             <!-- Popover -->
@@ -336,17 +336,17 @@
             <section class="panel panel-default">
                 <div class="panel-heading"><i class="fa fa-list panel-ico"></i>Tooltip</div>
                 <div class="panel-body text-center">
-                    <button class="btn btn-width-long btn-default btn-sp" tooltip-placement="top" tooltip="On the Top!" tooltip-append-to-body="true">Tooltip on Top</button>
+                    <button class="btn btn-width-long btn-default btn-sp" tooltip-placement="top" uib-tooltip="On the Top!" tooltip-append-to-body="true">Tooltip on Top</button>
                     <br>
-                    <button class="btn btn-width-long btn-primary btn-sp" tooltip-placement="left" tooltip="On the Left!" tooltip-append-to-body="true">Tooltip on Left</button>
+                    <button class="btn btn-width-long btn-primary btn-sp" tooltip-placement="left" uib-tooltip="On the Left!" tooltip-append-to-body="true">Tooltip on Left</button>
                     <br>
-                    <button class="btn btn-width-long btn-success btn-sp" tooltip-placement="right" tooltip="On the Right!" tooltip-append-to-body="true">Tooltip on Right</button>
+                    <button class="btn btn-width-long btn-success btn-sp" tooltip-placement="right" uib-tooltip="On the Right!" tooltip-append-to-body="true">Tooltip on Right</button>
                     <br>
-                    <button class="btn btn-width-long btn-info btn-sp" tooltip-animation="false" tooltip="I don't fade. :-(" tooltip-append-to-body="true">Without Animation</button>
+                    <button class="btn btn-width-long btn-info btn-sp" tooltip-animation="false" uib-tooltip="I don't fade. :-(" tooltip-append-to-body="true">Without Animation</button>
                     <br>
-                    <button class="btn btn-width-long btn-warning btn-sp" tooltip-popup-delay='1000' tooltip='appears with delay' tooltip-append-to-body="true">Tooltip Delayed</button>
+                    <button class="btn btn-width-long btn-warning btn-sp" tooltip-popup-delay='1000' uib-tooltip='appears with delay' tooltip-append-to-body="true">Tooltip Delayed</button>
                     <br>
-                    <button class="btn btn-width-long btn-danger btn-sp" tooltip-placement="bottom" tooltip="On the Bottom!" tooltip-append-to-body="true">Tooltip on Bottom</button>
+                    <button class="btn btn-width-long btn-danger btn-sp" tooltip-placement="bottom" uib-tooltip="On the Bottom!" tooltip-append-to-body="true">Tooltip on Bottom</button>
                 </div>
             </section>
             <!-- end Tooltip -->
@@ -445,17 +445,14 @@
                 <div class="panel-body" data-ng-controller="CollapseDemoCtrl">
                     <button class="btn btn-primary" ng-click="isCollapsed = !isCollapsed">Toggle collapse</button>
                     <hr>
-                    <div collapse="isCollapsed">
+                    <div uib-collapse="isCollapsed">
                         <div class="well well-lg">Some content</div>
                     </div>
                 </div>
             </section>
             <!-- end Collapse -->
-
         </div>
     </div>
-
-
 
     <!-- Pagination -->
     <section class="panel panel-default">
@@ -464,11 +461,11 @@
             <div class="page-header">
                 <h3>Pagination sizing</h3>
             </div>
-            <pagination class="pagination-lg" total-items="totalItems" ng-model="currentPage"></pagination>
+            <ul uib-pagination class="pagination-lg" total-items="totalItems" ng-model="currentPage"></ul>
             <br>
-            <pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+            <ul uib-pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></ul>
             <br>
-            <pagination class="pagination-sm" direction-links="false" total-items="totalItems" ng-model="currentPage" num-pages="smallnumPages"></pagination>
+            <ul uib-pagination class="pagination-sm" direction-links="false" total-items="totalItems" ng-model="currentPage" num-pages="smallnumPages"></ul>
             <div class="callout-elem callout-elem-info">
                 <p>The selected page no: {{currentPage}}</p>
             </div>
@@ -476,9 +473,9 @@
             <div class="page-header">
                 <h3>Limit the maximum visible buttons</h3>
             </div>
-            <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true"></pagination>
+            <ul uib-pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true"></ul>
             <br>
-            <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" rotate="false" num-pages="numPages"></pagination>
+            <ul uib-pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" rotate="false" num-pages="numPages"></ul>
             <div class="callout-elem callout-elem-info">
                 <p>Page: {{bigCurrentPage}} / {{numPages}}</p>
             </div>
@@ -517,12 +514,11 @@
     <section class="panel panel-default">
         <div class="panel-heading"><i class="fa fa-list panel-ico"></i>Alerts</div>
         <div class="panel-body" data-ng-controller="AlertDemoCtrl">
-            <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+            <div uib-alert ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')" close="closeAlert($index)">{{alert.msg}}</div>
             <button class='btn btn-primary' ng-click="addAlert()">Add Alert</button>
         </div>
     </section>
     <!-- end Alert -->
-
 
     <!-- Well -->
     <section class="panel panel-default">

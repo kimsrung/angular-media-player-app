@@ -3,7 +3,7 @@
 <!--     <div class="panel panel-default">
         <div class="panel-heading"><i class="fa fa-list panel-ico"></i>Example</div>
         <div class="panel-body">
-            
+
         </div>
     </div> -->
 
@@ -125,32 +125,31 @@
             <div class="page-header">
                 <h3>Static Progressbar</h3>
             </div>
-            <progressbar class="progressbar-sm" value="34" type="success"></progressbar>
-            <progressbar class="progressbar-sm" value="68" type="info"></progressbar>
-            <progressbar class="progressbar-sm" value="52" type="warning"></progressbar>
-            <progressbar class="progressbar-sm" value="77" type="danger"></progressbar>
+            <uib-progressbar class="progressbar-sm" value="34" type="success"></uib-progressbar>
+            <uib-progressbar class="progressbar-sm" value="68" type="info"></uib-progressbar>
+            <uib-progressbar class="progressbar-sm" value="52" type="warning"></uib-progressbar>
+            <uib-progressbar class="progressbar-sm" value="77" type="danger"></uib-progressbar>
             <p class="text-muted">Stacked Progress Bars</p>
-            <progress class="progressbar-sm">
+            <uib-progress class="progressbar-sm">
                 <bar value="40" type="success"></bar>
                 <bar value="20" type="warning"></bar>
                 <bar value="20" type="danger"></bar>
-            </progress>            
+            </uib-progress>
 
             <div class="page-header">
                 <h3>Striped Progressbar</h3>
             </div>
-            <progressbar class="progressbar-sm progress-striped" value="34" type="success"></progressbar>
-            <progressbar class="progressbar-sm progress-striped" value="68" type="info"></progressbar>
-            <progressbar class="progressbar-sm progress-striped" value="52" type="warning"></progressbar>
-            <progressbar class="progressbar-sm progress-striped" value="77" type="danger"></progressbar>
+            <uib-progressbar class="progressbar-sm progress-striped" value="34" type="success"></uib-progressbar>
+            <uib-progressbar class="progressbar-sm progress-striped" value="68" type="info"></uib-progressbar>
+            <uib-progressbar class="progressbar-sm progress-striped" value="52" type="warning"></uib-progressbar>
+            <uib-progressbar class="progressbar-sm progress-striped" value="77" type="danger"></uib-progressbar>
             <p class="text-muted">Animated Progress Bars</p>
-            <progressbar class="progressbar-sm progress-striped active" value="55"></progressbar>
-            <progress class="progressbar-sm progress-striped active">
+            <uib-progressbar class="progressbar-sm progress-striped active" value="55"></uib-progressbar>
+            <uib-progress class="progressbar-sm progress-striped active">
                 <bar value="40" type="success"></bar>
                 <bar value="20" type="warning"></bar>
                 <bar value="20" type="danger"></bar>
-            </progress> 
-
+            </uib-progress>
 
         </div>
     </section>
@@ -168,12 +167,11 @@
         <div class="panel-heading">Normal Tabs</div>
         <div class="panel-body">
           <div class="divider"></div>
-          <tabset class="ui-tab">
-            <tab heading="Tab nr 1">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</tab>
-            <tab heading="Tab nr 2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</tab>
-            <tab heading="Tab disabled" disabled="1">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</tab>
-
-          </tabset>
+          <uib-tabset class="ui-tab">
+            <uib-tab heading="Tab nr 1">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</uib-tab>
+            <uib-tab heading="Tab nr 2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</uib-tab>
+            <uib-tab heading="Tab disabled" disabled="1">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</uib-tab>
+          </uib-tabset>
         </div>
       </section>
 
@@ -182,19 +180,15 @@
       <section class="panel panel-default">
         <div class="panel-heading">Tab container</div>
         <div class="panel-body">
-
           <div class="ui-tab-container">
-            <tabset class="ui-tab">
-              <tab heading="Tab one">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </tab>
-              <tab heading="Tab second">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</tab>
-              <tab heading="Tab third">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </tab>
-
-            </tabset>
+            <uib-tabset class="ui-tab">
+              <uib-tab heading="Tab one">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </uib-tab>
+              <uib-tab heading="Tab second">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</uib-tab>
+              <uib-tab heading="Tab third">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </uib-tab>
+            </uib-tabset>
           </div>
         </div>
       </section>
-
-
     </div>
 
     <div class="col-sm-6">
@@ -202,41 +196,32 @@
       <section class="panel panel-default">
         <div class="panel-heading">Justified Tabs</div>
         <div class="panel-body">
-
-          <tabset justified="true" class="ui-tab">
-            <tab heading="Tab one">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </tab>
-            <tab heading="Tab second">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</tab>
-            <tab heading="Tab third">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </tab>
-
-          </tabset>
+          <uib-tabset justified="true" class="ui-tab">
+            <uib-tab heading="Tab one">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </uib-tab>
+            <uib-tab heading="Tab second">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</uib-tab>
+            <uib-tab heading="Tab third">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </uib-tab>
+          </uib-tabset>
         </div>
       </section>
 
-
-
       <div class="divider divider-md"></div>
-
 
       <section class="panel panel-default">
         <div class="panel-heading">Justified Tabs with container</div>
         <div class="panel-body">
-
           <div class="ui-tab-container">
             <div class="ui-tab-container">
-              <tabset justified="true" class="ui-tab">
-                <tab heading="Tab one">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </tab>
-                <tab heading="Tab second">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</tab>
-                <tab heading="Tab third">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </tab>
-
-              </tabset>
+              <uib-tabset justified="true" class="ui-tab">
+                <uib-tab heading="Tab one">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </uib-tab>
+                <uib-tab heading="Tab second">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</uib-tab>
+                <uib-tab heading="Tab third">Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </uib-tab>
+              </uib-tabset>
             </div>
           </div>
         </div>
       </section>
     </div>
-
   </div>
-
 </div>
     <!-- end Tab -->
 
@@ -249,76 +234,76 @@
                 <div class="col-lg-2">
                     <p>Open only one accordion at a time?</p>
                     <label class="switch switch-info"><input type="checkbox" ng-model="oneAtATime"><i></i></label>
-                    <hr>                    
+                    <hr>
                 </div>
                 <div class="col-lg-10">
-                    <accordion close-others="oneAtATime" class="ui-accordion">
-                        <accordion-group heading="First header - first opened" is-open="status.isFirstOpen">
+                    <uib-accordion close-others="oneAtATime" class="ui-accordion">
+                        <div uib-accordion-group heading="First header - first opened" is-open="status.isFirstOpen">
                             This content is straight in the template.
-                        </accordion-group>
-                        <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
+                        </div>
+                        <div uib-accordion-group heading="{{group.title}}" ng-repeat="group in groups">
                             {{group.content}}
-                        </accordion-group>
-                    </accordion>                    
+                        </div>
+                    </uib-accordion>
                 </div>
             </div>
 
-        
+
             <hr>
             <div class="row">
                 <div class="col-md-6">
-                    <accordion close-others="oneAtATime" class="ui-accordion ui-accordion-success">
-                        <accordion-group heading="Lorem Ipsum is simply dummy text" is-open="status.isFirstOpen1">
+                    <uib-accordion close-others="oneAtATime" class="ui-accordion ui-accordion-success">
+                        <div uib-accordion-group heading="Lorem Ipsum is simply dummy text" is-open="status.isFirstOpen1">
                             Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                        </accordion-group>
-                        <accordion-group heading="There are many variations of passages">
+                        </div>
+                        <div uib-accordion-group heading="There are many variations of passages">
                             Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                        </accordion-group>
-                        <accordion-group heading="Finibus Bonorum et Malorum">
+                        </div>
+                        <div uib-accordion-group heading="Finibus Bonorum et Malorum">
                              Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                        </accordion-group>
-                    </accordion>
+                        </div>
+                    </uib-accordion>
                 </div>
                 <div class="col-md-6">
-                    <accordion close-others="oneAtATime" class="ui-accordion ui-accordion-info">
-                        <accordion-group heading="Lorem Ipsum is simply dummy text" is-open="status.isFirstOpen2">
+                    <uib-accordion close-others="oneAtATime" class="ui-accordion ui-accordion-info">
+                        <div uib-accordion-group heading="Lorem Ipsum is simply dummy text" is-open="status.isFirstOpen2">
                             Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                        </accordion-group>
-                        <accordion-group heading="There are many variations of passages">
+                        </div>
+                        <div uib-accordion-group heading="There are many variations of passages">
                             Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                        </accordion-group>
-                        <accordion-group heading="Finibus Bonorum et Malorum">
+                        </div>
+                        <div uib-accordion-group heading="Finibus Bonorum et Malorum">
                             Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                        </accordion-group>                    
-                    </accordion>
+                        </div>
+                    </uib-accordion>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <accordion close-others="oneAtATime" class="ui-accordion ui-accordion-warning">
-                        <accordion-group heading="Lorem Ipsum is simply dummy text" is-open="status.isFirstOpen3">
+                    <uib-accordion close-others="oneAtATime" class="ui-accordion ui-accordion-warning">
+                        <div uib-accordion-group heading="Lorem Ipsum is simply dummy text" is-open="status.isFirstOpen3">
                             Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                        </accordion-group>
-                        <accordion-group heading="There are many variations of passages">
+                        </div>
+                        <div uib-accordion-group heading="There are many variations of passages">
                             Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                        </accordion-group>
-                        <accordion-group heading="Finibus Bonorum et Malorum">
+                        </div>
+                        <div uib-accordion-group heading="Finibus Bonorum et Malorum">
                             Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                        </accordion-group>
-                    </accordion>
+                        </div>
+                    </uib-accordion>
                 </div>
                 <div class="col-md-6">
-                    <accordion close-others="oneAtATime" class="ui-accordion ui-accordion-danger">
-                        <accordion-group heading="Lorem Ipsum is simply dummy text" is-open="status.isFirstOpen4">
+                    <uib-accordion close-others="oneAtATime" class="ui-accordion ui-accordion-danger">
+                        <div uib-accordion-group heading="Lorem Ipsum is simply dummy text" is-open="status.isFirstOpen4">
                             Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                        </accordion-group>
-                        <accordion-group heading="There are many variations of passages">
+                        </div>
+                        <div uib-accordion-group heading="There are many variations of passages">
                             Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                        </accordion-group>
-                        <accordion-group heading="Finibus Bonorum et Malorum">
+                        </div>
+                        <div uib-accordion-group heading="Finibus Bonorum et Malorum">
                             Lorem Ipsum is simply dummy textindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                        </accordion-group>                    
-                    </accordion>
+                        </div>
+                    </uib-accordion>
                 </div>
             </div>
         </div>
@@ -461,8 +446,8 @@
                     <button class="btn btn-primary" ng-click="isCollapsed = !isCollapsed">Toggle collapse</button>
                     <hr>
                     <div collapse="isCollapsed">
-                        <div class="well well-lg">Some content</div> 
-                    </div>            
+                        <div class="well well-lg">Some content</div>
+                    </div>
                 </div>
             </section>
             <!-- end Collapse -->
@@ -478,7 +463,7 @@
         <div class="panel-body" data-ng-controller="PaginationDemoCtrl">
             <div class="page-header">
                 <h3>Pagination sizing</h3>
-            </div>            
+            </div>
             <pagination class="pagination-lg" total-items="totalItems" ng-model="currentPage"></pagination>
             <br>
             <pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
@@ -487,7 +472,7 @@
             <div class="callout-elem callout-elem-info">
                 <p>The selected page no: {{currentPage}}</p>
             </div>
-            <button class="btn btn-primary" ng-click="setPage(3)">Set current page to: 3</button>                    
+            <button class="btn btn-primary" ng-click="setPage(3)">Set current page to: 3</button>
             <div class="page-header">
                 <h3>Limit the maximum visible buttons</h3>
             </div>
@@ -496,7 +481,7 @@
             <pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" rotate="false" num-pages="numPages"></pagination>
             <div class="callout-elem callout-elem-info">
                 <p>Page: {{bigCurrentPage}} / {{numPages}}</p>
-            </div>                    
+            </div>
         </div>
     </section>
     <!-- end Pagination -->
@@ -580,5 +565,3 @@
 
 
 </div>
-
-

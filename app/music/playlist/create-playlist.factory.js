@@ -6,12 +6,12 @@
     .factory('CreatePlaylistSrv', CreatePlaylistSrv);
 
   CreatePlaylistSrv.$inject = [
-    // '$modal',
+    '$modal',
     'PlayListSrv',
     '$state'
   ]
 
-  function CreatePlaylistSrv(PlayListSrv, $state) {
+  function CreatePlaylistSrv($modal, PlayListSrv, $state) {
 
     /**************************
      Provides a way to create a new playlist
@@ -25,18 +25,18 @@
 
     function openCreateModal(song){
 
-      // var modalInstance = $modal.open({
-      //   templateUrl: 'app/music/playlist/create_playlist.html',
-      //   controller: 'CreatePlaylistInstanceCtrl',
-      //   resolve: {
-      //    playlistName: function () {
-      //      return '';
-      //    },
-      //    song: function () {
-      //      return song;
-      //    }
-      //   }
-      // });
+      var modalInstance = $modal.open({
+        templateUrl: 'app/music/playlist/create_playlist.html',
+        controller: 'CreatePlaylistInstanceCtrl',
+        resolve: {
+         playlistName: function () {
+           return '';
+         },
+         song: function () {
+           return song;
+         }
+        }
+      });
 
       modalInstance.result.then(function (response) {
         var songs = [];
@@ -67,6 +67,6 @@
 
         };
 
-    }
+  }
 })();
 

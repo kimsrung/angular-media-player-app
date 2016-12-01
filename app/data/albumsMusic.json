@@ -12,36 +12,42 @@
     "about": "Great music inspired by early electronic sounds, combining the symphony of classical instruments and complete surrounding",
     "songs": [
       {
+        "id": "1",
         "image": "dist/images/songs/song1.jpg",
         "url": "http://ccmixter.org/content/snowflake/snowflake_-_I_Miss_You.mp3",
         "displayName": "The lunatics - Come Together",
         "type": "audio/mpeg"
       },
       {
+        "id": "2",
         "image": "dist/images/songs/song2.jpg",
         "url": "http://ccmixter.org/content/admiralbob77/admiralbob77_-_The_Remixin_Blues_2.mp3",
         "displayName": "The lunatics - Drive my car",
         "type": "audio/mpeg"
       },
       {
+        "id": "3",
         "image": "dist/images/songs/song3.jpg",
         "url": "http://ccmixter.org/content/unreal_dm/unreal_dm_-_Recycle_This.mp3",
         "displayName": "The lunatics - Loser",
         "type": "audio/mpeg"
       },
       {
+        "id": "4",
         "image": "dist/images/songs/song4.jpg",
         "url": "http://ccmixter.org/content/snowflake/snowflake_-_I_Miss_You.mp3",
         "displayName": "The lunatics - All my loving",
         "type": "audio/mpeg"
       },
       {
+        "id": "5",
         "image": "dist/images/songs/song5.jpg",
         "url": "http://ccmixter.org/content/admiralbob77/admiralbob77_-_The_Remixin_Blues_2.mp3",
         "displayName": "The lunatics - Taxman",
         "type": "audio/mpeg"
       },
       {
+        "id": "6",
         "image": "dist/images/songs/song6.jpg",
         "url": "http://ccmixter.org/content/unreal_dm/unreal_dm_-_Recycle_This.mp3",
         "displayName": "The lunatics - Tonight we do",
@@ -62,42 +68,49 @@
     "about": "Great music inspired by early electronic sounds, combining the symphony of classical instruments and complete surrounding",
     "songs": [
           {
+            "id": "7",
             "image": "dist/images/songs/song1.jpg",
             "url": "http://ccmixter.org/content/snowflake/snowflake_-_I_Miss_You.mp3",
             "displayName": "La fiesta negra - Come Together",
             "type": "audio/mpeg"
           },
           {
+            "id": "8",
             "image": "dist/images/songs/song2.jpg",
             "url": "http://ccmixter.org/content/admiralbob77/admiralbob77_-_The_Remixin_Blues_2.mp3",
             "displayName": "La fiesta negra - Drive my car",
             "type": "audio/mpeg"
           },
           {
+            "id": "9",
             "image": "dist/images/songs/song3.jpg",
             "url": "http://ccmixter.org/content/unreal_dm/unreal_dm_-_Recycle_This.mp3",
             "displayName": "La fiesta negra - Loser",
             "type": "audio/mpeg"
           },
           {
+            "id": "10",
             "image": "dist/images/songs/song4.jpg",
             "url": "http://ccmixter.org/content/snowflake/snowflake_-_I_Miss_You.mp3",
             "displayName": "La fiesta negra - All my loving",
             "type": "audio/mpeg"
           },
           {
+            "id": "11",
             "image": "dist/images/songs/song5.jpg",
             "url": "http://ccmixter.org/content/unreal_dm/unreal_dm_-_Recycle_This.mp3",
             "displayName": "La fiesta negra - Taxman",
             "type": "audio/mpeg"
           },
           {
+            "id": "12",
             "image": "dist/images/songs/song6.jpg",
             "url": "http://ccmixter.org/content/snowflake/snowflake_-_I_Miss_You.mp3",
             "displayName": "La fiesta negra - Tonight we do",
             "type": "audio/mpeg"
           },
           {
+            "id": "13",
             "image": "dist/images/songs/song7.jpg",
             "url": "http://ccmixter.org/content/admiralbob77/admiralbob77_-_The_Remixin_Blues_2.mp3",
             "displayName": "La fiesta negra - Revolver",
@@ -118,48 +131,56 @@
     "about": "Great music inspired by early electronic sounds, combining the symphony of classical instruments and complete surrounding",
     "songs": [
           {
+            "id": "14",
             "image": "dist/images/songs/song1.jpg",
             "url": "http://ccmixter.org/content/snowflake/snowflake_-_I_Miss_You.mp3",
             "displayName": "King of the mood - Come Together",
             "type": "audio/mpeg"
           },
           {
+            "id": "15",
             "image": "dist/images/songs/song2.jpg",
             "url": "http://ccmixter.org/content/admiralbob77/admiralbob77_-_The_Remixin_Blues_2.mp3",
             "displayName": "King of the mood - Drive my car",
             "type": "audio/mpeg"
           },
           {
+            "id": "16",
             "image": "dist/images/songs/song3.jpg",
             "url": "http://ccmixter.org/content/unreal_dm/unreal_dm_-_Recycle_This.mp3",
             "displayName": "King of the mood - Loser",
             "type": "audio/mpeg"
           },
           {
+            "id": "17",
             "image": "dist/images/songs/song4.jpg",
             "url": "http://ccmixter.org/content/snowflake/snowflake_-_I_Miss_You.mp3",
             "displayName": "King of the mood - All my loving",
             "type": "audio/mpeg"
           },
           {
+            "id": "18",
             "image": "dist/images/songs/song5.jpg",
             "url": "http://ccmixter.org/content/unreal_dm/unreal_dm_-_Recycle_This.mp3",
             "displayName": "King of the mood - Taxman",
             "type": "audio/mpeg"
           },
           {
+            "id": "19",
             "image": "dist/images/songs/song6.jpg",
             "url": "http://ccmixter.org/content/snowflake/snowflake_-_I_Miss_You.mp3",
             "displayName": "King of the mood - Tonight we do",
             "type": "audio/mpeg"
           },
           {
+            "id": "20",
             "image": "dist/images/songs/song7.jpg",
             "url": "http://ccmixter.org/content/admiralbob77/admiralbob77_-_The_Remixin_Blues_2.mp3",
             "displayName": "King of the mood - Revolver",
             "type": "audio/mpeg"
           },
           {
+            "id": "21",
             "image": "dist/images/songs/song8.jpg",
             "url": "http://ccmixter.org/content/unreal_dm/unreal_dm_-_Recycle_This.mp3",
             "displayName": "King of the mood - Here comes the sun",

@@ -172,7 +172,27 @@
   </li>
 </ul>
 
+</ul>
+
 <ul class="nav-button pull-right list-unstyled">
+    <li class="btn-group" dropdown="" data-ng-controller="ActionsCtrl as actions">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        {{actions.language}}
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu pull-right list-unstyled" role="menu">
+        <li>
+          <a ng-click="actions.setLang('en')" class="media">
+            English
+          </a>
+        </li>
+        <li>
+          <a ng-click="actions.setLang('kh')" class="media">
+            Khmer
+          </a>
+        </li>
+      </ul>
+    </li>
 
     <li class="dropdown text-small nav-profile">
         <a href="javascript:;" class="dropdown-toggle text-muted" data-toggle="dropdown" aria-expanded="false">
@@ -180,6 +200,7 @@
         </a>
 
         <div class="dropdown-menu pull-right with-arrow panel panel-default">
+
 
           <ul class="list-group">
             <li class="list-group-item">

@@ -30,10 +30,11 @@ angular
 config.$inject = [
   '$urlRouterProvider',
   '$stateProvider',
-  '$locationProvider'
+  '$locationProvider',
+  '$translateProvider'
 ]
 
-function config($urlRouterProvider, $stateProvider, $locationProvider) {
+function config($urlRouterProvider, $stateProvider, $locationProvider, $translateProvider) {
     // $locationProvider.html5Mode(true);
 
     $urlRouterProvider.otherwise('/dashboard');
@@ -43,5 +44,19 @@ function config($urlRouterProvider, $stateProvider, $locationProvider) {
       controller: 'LayoutCtrl',
       controllerAs: 'generalPlaylist'
     });
+
+    $translateProvider.translations('en', {
+      ARTISTS: 'Artists',
+      ALBUMS: 'Albums',
+      DASHBOARD: 'Dashboard',
+      GENRES: 'genres'
+    });
+    $translateProvider.translations('kh', {
+      ARTISTS: 'សិល្បករ',
+      ALBUMS: 'អាល់ប៊ុម',
+      DASHBOARD: 'ផ្ទាំងគ្រប់គ្រង',
+      GENRES: 'ប្រភេទ'
+    });
+    $translateProvider.preferredLanguage('en');
 }
 })();

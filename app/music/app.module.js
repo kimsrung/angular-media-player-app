@@ -8,6 +8,7 @@
     "ui.router",
     "angularSoundManager",
     "ngDragDrop",
-    'app.directives'
+    'app.directives',
+    'pascalprecht.translate'
   ]);
 })();

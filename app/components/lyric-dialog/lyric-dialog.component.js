@@ -34,6 +34,7 @@
         if(keepGoing) {
           angular.forEach(lyric, function (value, key) {
               if (currentPostion < key) {
+                ctrl.currentTime = key
                 ctrl.currentLyric = value;
                 keepGoing = false;
               }

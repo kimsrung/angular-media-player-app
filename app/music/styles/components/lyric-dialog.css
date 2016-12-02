@@ -1,0 +1,23 @@
+.lyric-dialog {
+  background-color: #888888;
+  color: #fff;
+  box-shadow: 6px 6px 40px -17px #888888;
+  min-width: 300px;
+  position: fixed;
+  top: 65px;
+  left: 240px;
+  bottom: 0;
+  padding: 16px;
+  z-index: 1;
+}
+.lyric-dialog-content {
+  overflow: auto;
+}
+.lyric-dialog-content .lyric-text {
+  line-height: 28px;
+  padding: 10px;
+}
+.lyric-dialog-content .highlight {
+  background-color: #E0EAF1;
+  padding: 5px;
+}

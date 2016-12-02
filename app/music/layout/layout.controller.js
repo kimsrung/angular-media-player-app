@@ -9,11 +9,12 @@
     '$scope',
     '$state',
     'angularPlayer',
+    '$timeout',
     'PlayListSrv',
     'CreatePlaylistSrv'
   ]
 
-  function LayoutCtrl($scope,$state,angularPlayer,PlayListSrv, CreatePlaylistSrv) {
+  function LayoutCtrl($scope,$state,angularPlayer, $timeout,PlayListSrv, CreatePlaylistSrv) {
     var vm = this;
     var CreateNewPlaylistSrv = CreatePlaylistSrv;
 
@@ -26,12 +27,10 @@
     };
 
     vm.removeSong = function (index) {
-      debugger
       vm.audioPlaylist.splice(index, 1);
     };
 
     vm.dropSong = function (song, index) {
-      debugger
       vm.audioPlaylist = $scope.playlist;
       vm.audioPlaylist.splice(index, 0, angular.copy(song));
       vm.audioPlaylist.splice(index, 1);
@@ -67,6 +66,17 @@
     vm.createNewPlaylist = function(song){
       CreateNewPlaylistSrv.openCreateModal(song);
     };
+
+    vm.showLyric = function (song) {
+      $timeout(function () {
+        if (!$scope.isPlaying || $scope.currentPlaying.id != song.id) {
+          angularPlayer.addTrack(song);
+          angularPlayer.play();
+        }
+
+        angular.element('#lyric-dialog')[0].click()}
+      );
+    }
 
   }
 })();

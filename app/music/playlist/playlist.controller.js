@@ -40,7 +40,8 @@
               type: song.type,
               artist: parseTitle[1],
               title: parseTitle[2],
-              displayName:song.displayName
+              displayName:song.displayName,
+              lyrics: song.lyrics
             });
           });
 

@@ -16,7 +16,45 @@
         "image": "dist/images/songs/song1.jpg",
         "url": "http://ccmixter.org/content/snowflake/snowflake_-_I_Miss_You.mp3",
         "displayName": "The lunatics - Come Together",
-        "type": "audio/mpeg"
+        "type": "audio/mpeg",
+        "lyric     [
+                {
+                  "00:15": "I miss you, where are you hiding? Miss you, your soul’s not lighting up now I miss you and the hope once shining through you"
+                },
+                {
+                  "00:31": "Did someone hurt you? Did you give into bribery? Did fear wrap around you Did power strong-arm liberty?"
+                },
+                {
+                  "00:45": "I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "01:00": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now?"
+                },
+                {
+                  "01:16": "I miss you overturning exec Misuse of commander and chief signature But now you’re doling out the dollars"
+                },
+                {
+                  "01:25": "But I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "01:53": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now? Will you listen now?(x2)"
+                },
+                {
+                  "02:08": "I”m afraid to fly where nothing’s sacred Afraid to trust this House of Bankers Made a lie of justice is she blind? Well, I’m in terror now"
+                },
+                {
+                  "02:26": "Did someone hurt you? Did you give into bribery? Did fear wrap around you? Did power strong-arm liberty?"
+                },
+                {
+                  "02:41": "I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "03:00": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now? Will you listen now?(x2)"
+                },
+                {
+                  "03:29": "I miss you will you listen now I miss you will you listen now I miss you will you listen now will you listen now"
+                }
+              ]
       },
       {
         "id": "2",
@@ -37,7 +75,45 @@
         "image": "dist/images/songs/song4.jpg",
         "url": "http://ccmixter.org/content/snowflake/snowflake_-_I_Miss_You.mp3",
         "displayName": "The lunatics - All my loving",
-        "type": "audio/mpeg"
+        "type": "audio/mpeg",
+        "lyric     [
+                {
+                  "00:15": "I miss you, where are you hiding? Miss you, your soul’s not lighting up now I miss you and the hope once shining through you"
+                },
+                {
+                  "00:31": "Did someone hurt you? Did you give into bribery? Did fear wrap around you Did power strong-arm liberty?"
+                },
+                {
+                  "00:45": "I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "01:00": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now?"
+                },
+                {
+                  "01:16": "I miss you overturning exec Misuse of commander and chief signature But now you’re doling out the dollars"
+                },
+                {
+                  "01:25": "But I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "01:53": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now? Will you listen now?(x2)"
+                },
+                {
+                  "02:08": "I”m afraid to fly where nothing’s sacred Afraid to trust this House of Bankers Made a lie of justice is she blind? Well, I’m in terror now"
+                },
+                {
+                  "02:26": "Did someone hurt you? Did you give into bribery? Did fear wrap around you? Did power strong-arm liberty?"
+                },
+                {
+                  "02:41": "I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "03:00": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now? Will you listen now?(x2)"
+                },
+                {
+                  "03:29": "I miss you will you listen now I miss you will you listen now I miss you will you listen now will you listen now"
+                }
+              ]
       },
       {
         "id": "5",
@@ -72,7 +148,45 @@
             "image": "dist/images/songs/song1.jpg",
             "url": "http://ccmixter.org/content/snowflake/snowflake_-_I_Miss_You.mp3",
             "displayName": "La fiesta negra - Come Together",
-            "type": "audio/mpeg"
+            "type": "audio/mpeg",
+            "lyrics": [
+                {
+                  "00:15": "I miss you, where are you hiding? Miss you, your soul’s not lighting up now I miss you and the hope once shining through you"
+                },
+                {
+                  "00:31": "Did someone hurt you? Did you give into bribery? Did fear wrap around you Did power strong-arm liberty?"
+                },
+                {
+                  "00:45": "I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "01:00": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now?"
+                },
+                {
+                  "01:16": "I miss you overturning exec Misuse of commander and chief signature But now you’re doling out the dollars"
+                },
+                {
+                  "01:25": "But I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "01:53": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now? Will you listen now?(x2)"
+                },
+                {
+                  "02:08": "I”m afraid to fly where nothing’s sacred Afraid to trust this House of Bankers Made a lie of justice is she blind? Well, I’m in terror now"
+                },
+                {
+                  "02:26": "Did someone hurt you? Did you give into bribery? Did fear wrap around you? Did power strong-arm liberty?"
+                },
+                {
+                  "02:41": "I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "03:00": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now? Will you listen now?(x2)"
+                },
+                {
+                  "03:29": "I miss you will you listen now I miss you will you listen now I miss you will you listen now will you listen now"
+                }
+              ]
           },
           {
             "id": "8",
@@ -93,7 +207,45 @@
             "image": "dist/images/songs/song4.jpg",
             "url": "http://ccmixter.org/content/snowflake/snowflake_-_I_Miss_You.mp3",
             "displayName": "La fiesta negra - All my loving",
-            "type": "audio/mpeg"
+            "type": "audio/mpeg",
+            "lyrics": [
+                {
+                  "00:15": "I miss you, where are you hiding? Miss you, your soul’s not lighting up now I miss you and the hope once shining through you"
+                },
+                {
+                  "00:31": "Did someone hurt you? Did you give into bribery? Did fear wrap around you Did power strong-arm liberty?"
+                },
+                {
+                  "00:45": "I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "01:00": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now?"
+                },
+                {
+                  "01:16": "I miss you overturning exec Misuse of commander and chief signature But now you’re doling out the dollars"
+                },
+                {
+                  "01:25": "But I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "01:53": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now? Will you listen now?(x2)"
+                },
+                {
+                  "02:08": "I”m afraid to fly where nothing’s sacred Afraid to trust this House of Bankers Made a lie of justice is she blind? Well, I’m in terror now"
+                },
+                {
+                  "02:26": "Did someone hurt you? Did you give into bribery? Did fear wrap around you? Did power strong-arm liberty?"
+                },
+                {
+                  "02:41": "I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "03:00": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now? Will you listen now?(x2)"
+                },
+                {
+                  "03:29": "I miss you will you listen now I miss you will you listen now I miss you will you listen now will you listen now"
+                }
+              ]
           },
           {
             "id": "11",
@@ -107,7 +259,45 @@
             "image": "dist/images/songs/song6.jpg",
             "url": "http://ccmixter.org/content/snowflake/snowflake_-_I_Miss_You.mp3",
             "displayName": "La fiesta negra - Tonight we do",
-            "type": "audio/mpeg"
+            "type": "audio/mpeg",
+            "lyrics": [
+                {
+                  "00:15": "I miss you, where are you hiding? Miss you, your soul’s not lighting up now I miss you and the hope once shining through you"
+                },
+                {
+                  "00:31": "Did someone hurt you? Did you give into bribery? Did fear wrap around you Did power strong-arm liberty?"
+                },
+                {
+                  "00:45": "I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "01:00": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now?"
+                },
+                {
+                  "01:16": "I miss you overturning exec Misuse of commander and chief signature But now you’re doling out the dollars"
+                },
+                {
+                  "01:25": "But I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "01:53": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now? Will you listen now?(x2)"
+                },
+                {
+                  "02:08": "I”m afraid to fly where nothing’s sacred Afraid to trust this House of Bankers Made a lie of justice is she blind? Well, I’m in terror now"
+                },
+                {
+                  "02:26": "Did someone hurt you? Did you give into bribery? Did fear wrap around you? Did power strong-arm liberty?"
+                },
+                {
+                  "02:41": "I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "03:00": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now? Will you listen now?(x2)"
+                },
+                {
+                  "03:29": "I miss you will you listen now I miss you will you listen now I miss you will you listen now will you listen now"
+                }
+              ]
           },
           {
             "id": "13",
@@ -135,7 +325,45 @@
             "image": "dist/images/songs/song1.jpg",
             "url": "http://ccmixter.org/content/snowflake/snowflake_-_I_Miss_You.mp3",
             "displayName": "King of the mood - Come Together",
-            "type": "audio/mpeg"
+            "type": "audio/mpeg",
+            "lyrics": [
+                {
+                  "00:15": "I miss you, where are you hiding? Miss you, your soul’s not lighting up now I miss you and the hope once shining through you"
+                },
+                {
+                  "00:31": "Did someone hurt you? Did you give into bribery? Did fear wrap around you Did power strong-arm liberty?"
+                },
+                {
+                  "00:45": "I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "01:00": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now?"
+                },
+                {
+                  "01:16": "I miss you overturning exec Misuse of commander and chief signature But now you’re doling out the dollars"
+                },
+                {
+                  "01:25": "But I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "01:53": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now? Will you listen now?(x2)"
+                },
+                {
+                  "02:08": "I”m afraid to fly where nothing’s sacred Afraid to trust this House of Bankers Made a lie of justice is she blind? Well, I’m in terror now"
+                },
+                {
+                  "02:26": "Did someone hurt you? Did you give into bribery? Did fear wrap around you? Did power strong-arm liberty?"
+                },
+                {
+                  "02:41": "I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "03:00": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now? Will you listen now?(x2)"
+                },
+                {
+                  "03:29": "I miss you will you listen now I miss you will you listen now I miss you will you listen now will you listen now"
+                }
+              ]
           },
           {
             "id": "15",
@@ -156,7 +384,45 @@
             "image": "dist/images/songs/song4.jpg",
             "url": "http://ccmixter.org/content/snowflake/snowflake_-_I_Miss_You.mp3",
             "displayName": "King of the mood - All my loving",
-            "type": "audio/mpeg"
+            "type": "audio/mpeg",
+            "lyrics": [
+                {
+                  "00:15": "I miss you, where are you hiding? Miss you, your soul’s not lighting up now I miss you and the hope once shining through you"
+                },
+                {
+                  "00:31": "Did someone hurt you? Did you give into bribery? Did fear wrap around you Did power strong-arm liberty?"
+                },
+                {
+                  "00:45": "I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "01:00": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now?"
+                },
+                {
+                  "01:16": "I miss you overturning exec Misuse of commander and chief signature But now you’re doling out the dollars"
+                },
+                {
+                  "01:25": "But I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "01:53": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now? Will you listen now?(x2)"
+                },
+                {
+                  "02:08": "I”m afraid to fly where nothing’s sacred Afraid to trust this House of Bankers Made a lie of justice is she blind? Well, I’m in terror now"
+                },
+                {
+                  "02:26": "Did someone hurt you? Did you give into bribery? Did fear wrap around you? Did power strong-arm liberty?"
+                },
+                {
+                  "02:41": "I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "03:00": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now? Will you listen now?(x2)"
+                },
+                {
+                  "03:29": "I miss you will you listen now I miss you will you listen now I miss you will you listen now will you listen now"
+                }
+              ]
           },
           {
             "id": "18",
@@ -170,7 +436,45 @@
             "image": "dist/images/songs/song6.jpg",
             "url": "http://ccmixter.org/content/snowflake/snowflake_-_I_Miss_You.mp3",
             "displayName": "King of the mood - Tonight we do",
-            "type": "audio/mpeg"
+            "type": "audio/mpeg",
+            "lyrics": [
+                {
+                  "00:15": "I miss you, where are you hiding? Miss you, your soul’s not lighting up now I miss you and the hope once shining through you"
+                },
+                {
+                  "00:31": "Did someone hurt you? Did you give into bribery? Did fear wrap around you Did power strong-arm liberty?"
+                },
+                {
+                  "00:45": "I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "01:00": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now?"
+                },
+                {
+                  "01:16": "I miss you overturning exec Misuse of commander and chief signature But now you’re doling out the dollars"
+                },
+                {
+                  "01:25": "But I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "01:53": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now? Will you listen now?(x2)"
+                },
+                {
+                  "02:08": "I”m afraid to fly where nothing’s sacred Afraid to trust this House of Bankers Made a lie of justice is she blind? Well, I’m in terror now"
+                },
+                {
+                  "02:26": "Did someone hurt you? Did you give into bribery? Did fear wrap around you? Did power strong-arm liberty?"
+                },
+                {
+                  "02:41": "I would forgive you if you would be the change again And I could support you if freedom rang aloud again"
+                },
+                {
+                  "03:00": "You’re missing(x2) where men with courage stand Somehow you’re missing(x2) will you listen now? Will you listen now?(x2)"
+                },
+                {
+                  "03:29": "I miss you will you listen now I miss you will you listen now I miss you will you listen now will you listen now"
+                }
+              ]
           },
           {
             "id": "20",

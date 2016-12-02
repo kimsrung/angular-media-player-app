@@ -123,9 +123,11 @@
                       </div>
 
                       <div class="play-pause-button" ng-show=" currentPlaying.id == song.id">
-                        <button class="btn btn-primary">
-                          <i class="fa fa-pause" ng-show="isPlaying" pause-music></i>
-                          <i class="fa fa-play-circle" ng-hide="isPlaying" play-music></i>
+                        <button class="btn btn-primary" ng-show="isPlaying" pause-music>
+                          <i class="fa fa-pause"></i>
+                        </button>
+                        <button class="btn btn-primary" ng-hide="isPlaying" play-music>
+                          <i class="fa fa-play-circle"></i>
                         </button>
                       </div>
                     </div>
@@ -149,7 +151,16 @@
                         </ul>
                       </div>
                       <i class="fa fa-retweet action" title="Share to Feed"></i>
-                      <i class="fa fa-list action" title="More Options..."></i>
+                      <div class="btn-group">
+                        <a type="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                          <i class="fa fa-list action" title="More Options..."></i>
+                        </a>
+
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="javascript:;" ng-click="generalPlaylist.showLyric(song)">Play with lyric</a></li>
+                        </ul>
+                      </div>
+
                     </div>
 
                     <div class="music-listing__name">
@@ -183,10 +194,12 @@
                       <button music-player="play" add-song="song" class="btn btn-primary"><i class="fa fa-play-circle"></i></button>
                     </div>
                     <div class="play-pause-button" ng-show=" currentPlaying.id == song.id">
-                      <button class="btn btn-primary">
-                        <i class="fa fa-pause" ng-show="isPlaying" pause-music></i>
-                        <i class="fa fa-play-circle" ng-hide="isPlaying" play-music></i>
-                      </button>
+                        <button class="btn btn-primary" ng-show="isPlaying" pause-music>
+                          <i class="fa fa-pause"></i>
+                        </button>
+                        <button class="btn btn-primary" ng-hide="isPlaying" play-music>
+                          <i class="fa fa-play-circle"></i>
+                        </button>
                     </div>
                   </div>
 

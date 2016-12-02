@@ -61,7 +61,8 @@
                 type: song.type,
                 artist: parseTitle[1],
                 title: parseTitle[2],
-                displayName:song.displayName
+                displayName:song.displayName,
+                lyrics: song.lyrics
               });
 
               /*Put songs also in this artist ordered by album*/
@@ -74,7 +75,8 @@
                 type: song.type,
                 artist: parseTitle[1],
                 title: parseTitle[2],
-                displayName:song.displayName
+                displayName:song.displayName,
+                lyrics: song.lyrics
               });
             });
 

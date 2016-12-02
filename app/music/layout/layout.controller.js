@@ -71,7 +71,7 @@
       $timeout(function () {
         if (!$scope.isPlaying || $scope.currentPlaying.id != song.id) {
           angularPlayer.addTrack(song);
-          angularPlayer.play();
+          angularPlayer.playTrack(song.id);
         }
 
         angular.element('#lyric-dialog')[0].click()}

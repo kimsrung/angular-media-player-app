@@ -11,14 +11,23 @@
   LyricDialogController.$inject = [
     '$scope',
     '$filter',
+    '$timeout',
     'angularPlayer'
   ]
 
-  function LyricDialogController($scope, $filter, angularPlayer) {
+  function LyricDialogController($scope, $filter, $timeout, angularPlayer) {
     var ctrl = this;
     ctrl.show = false;
     ctrl.open = open;
     ctrl.lyricSeekTrack = lyricSeekTrack;
+
+    $scope.$watch('lyricChange', function (old) {
+      if (angular.isDefined(old)) {
+        var highlight = angular.element(".highlight")[0];
+        if (angular.isDefined(highlight)) { highlight.scrollIntoView(); };
+      };
+
+    })
 
     $scope.$on('track:id', function(event, data) {
       ctrl.currentPlaying= angularPlayer.currentTrackData();
@@ -34,11 +43,13 @@
         if(keepGoing) {
           angular.forEach(lyric, function (value, key) {
               if (currentPostion < key) {
+                $scope.lyricChange = value;
                 ctrl.currentTime = key
                 ctrl.currentLyric = value;
                 keepGoing = false;
               }
           })
+
         }
       })
     });
@@ -48,6 +59,12 @@
     }
 
     function lyricSeekTrack(index) {
+      if(!$scope.currentPlaying) {
+        $timeout(function () {
+          angularPlayer.play()
+        })
+      };
+
       var time = '00:00';
       var timeInMilliseconds = 0;
 

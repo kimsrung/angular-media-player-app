@@ -3,7 +3,9 @@
 
 <div ng-show="$ctrl.show">
   <div class="lyric-dialog">
-    <i class="fa fa-remove pull-right" ng-click="$ctrl.show=false"></i>
+    <a href="" ng-click="$ctrl.show=false">
+      <i class="fa fa-remove pull-right"></i>
+    </a>
     <div class="lyric-dialog-content" data-slim-scroll>
       <div ng-repeat="lyric in $ctrl.currentPlaying.lyrics track by $index" class="lyric-text" ng-click="$ctrl.lyricSeekTrack($index)">
         <span ng-repeat="(position, text) in lyric" ng-class="{'highlight': (text == $ctrl.currentLyric && position == $ctrl.currentTime)}">

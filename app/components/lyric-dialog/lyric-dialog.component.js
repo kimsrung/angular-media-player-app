@@ -21,10 +21,12 @@
     ctrl.open = open;
     ctrl.lyricSeekTrack = lyricSeekTrack;
 
-    $scope.$watch('lyricChange', function (old) {
-      if (angular.isDefined(old)) {
+    $scope.$watch('lyricChange', function (value) {
+      if (value) {
         var highlight = angular.element(".highlight")[0];
-        if (angular.isDefined(highlight)) { highlight.scrollIntoView(); };
+        if (highlight) {
+          highlight.scrollIntoView();
+        };
       };
 
     })
@@ -61,7 +63,7 @@
     function lyricSeekTrack(index) {
       if(!$scope.currentPlaying) {
         $timeout(function () {
-          angularPlayer.play()
+          angularPlayer.play(ctrl.currentPlaying.id)
         })
       };
 
@@ -70,6 +72,8 @@
 
       if (index != 0 ) {
         time = Object.keys(ctrl.currentPlaying.lyrics[index-1])[0];
+        ctrl.currentLyric = $scope.lyricChange = Object.values(ctrl.currentPlaying.lyrics[index-1])[0];;
+        ctrl.currentTime = time;
         timeInMilliseconds = ( Number(time.split(':')[0])*60 + Number(time.split(':')[1]) ) * 1000;
       }
 

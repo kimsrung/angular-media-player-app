@@ -12,9 +12,7 @@
   z-index: 1;
   font-size: 13px;
 }
-.lyric-dialog-content {
-  overflow: auto;
-}
+
 .lyric-dialog-content .lyric-text {
   line-height: 26px;
   padding: 10px;

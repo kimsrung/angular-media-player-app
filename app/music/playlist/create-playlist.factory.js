@@ -6,12 +6,13 @@
     .factory('CreatePlaylistSrv', CreatePlaylistSrv);
 
   CreatePlaylistSrv.$inject = [
-    '$modal',
+    '$uibModal',
+    '$log',
     'PlayListSrv',
-    '$state'
+    '$location'
   ]
 
-  function CreatePlaylistSrv($modal, PlayListSrv, $state) {
+  function CreatePlaylistSrv($uibModal, $log, PlayListSrv, $location) {
 
     /**************************
      Provides a way to create a new playlist
@@ -25,7 +26,7 @@
 
     function openCreateModal(song){
 
-      var modalInstance = $modal.open({
+      var modalInstance = $uibModal.open({
         templateUrl: 'app/music/playlist/create_playlist.html',
         controller: 'CreatePlaylistInstanceCtrl',
         resolve: {
@@ -58,7 +59,7 @@
         //Callback for a Okay on Save new playlist
 
         PlayListSrv.put(new_playlist,function(response){
-          $state.go('layout.playlist', {title: url_name});
+          window.location = "#/playlist/" + url_name;
         });
 
         }, function () {

@@ -7,13 +7,13 @@
 
   CreatePlaylistInstanceCtrl.$inject = [
     '$scope',
-    '$modalInstance',
+    '$uibModalInstance',
     'playlistName',
     'song',
     'loggit'
   ]
 
-  function CreatePlaylistInstanceCtrl($scope, $modalInstance, playlistName, song, loggit) {
+  function CreatePlaylistInstanceCtrl($scope, $uibModalInstance, playlistName, song, loggit) {
     var vm = this;
 
     $scope.playlistName = playlistName;
@@ -22,16 +22,16 @@
     $scope.ok = function () {
 
       if($scope.playlistName !== ""){
-        $modalInstance.close($scope);
+        $uibModalInstance.close($scope);
       }
       else {
-        $modalInstance.dismiss('cancel');
+        $uibModalInstance.dismiss('cancel');
         loggit.logError("Error! Could not create a playlist with no name..");
       }
     };
 
     $scope.cancel = function () {
-      $modalInstance.dismiss('cancel');
+      $uibModalInstance.dismiss('cancel');
     };
   }
 })();

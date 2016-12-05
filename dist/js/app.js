@@ -1,4 +1,4 @@
-/*! angular-groovy - v0.0.1 - 2016-12-02 *//*!
+/*! angular-groovy - v0.0.1 - 2016-12-05 *//*!
  * Bootstrap v3.2.0 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)

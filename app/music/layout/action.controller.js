@@ -12,7 +12,10 @@
 
   function ActionsCtrl($scope, $translate) {
     var vm = this;
-    vm.language = 'en';
+    vm.languages = [
+      { locale: 'en', name: 'English' },
+      { locale: 'kh', name: 'Khmer' }
+    ];
 
     vm.toggleChat = function () {
       $('.chat-bar').toggleClass("visible");
@@ -20,7 +23,7 @@
 
     vm.setLang = function (key) {
       $translate.use(key);
-      vm.language = key;
+      vm.locale = key;
     }
 
   }

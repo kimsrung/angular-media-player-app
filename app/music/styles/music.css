@@ -8,3 +8,11 @@
   padding: 6px 18px;
   border-radius: 20px;
 }
+
+.top-header .top-nav .nav-left>li>a.billingual {
+  font-size: 15px;
+}
+.top-header .top-nav .nav-left>li>a.billingual:hover {
+  cursor: pointer;
+  color: #1FAE5B;
+}

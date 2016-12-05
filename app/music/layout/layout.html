@@ -25,12 +25,22 @@
             <div class="btn" prev-track>
               <i class="fa fa-step-backward"></i>
             </div>
-            <div class="btn">
-              <i class="fa fa-pause" ng-show="isPlaying" pause-music></i>
-              <i class="fa fa-play" ng-hide="isPlaying" play-music></i>
+            <div class="btn" ng-show="isPlaying" pause-music>
+              <i class="fa fa-pause"></i>
+            </div>
+            <div class="btn" ng-hide="isPlaying" play-music>
+              <i class="fa fa-play"></i>
             </div>
             <div class="btn" next-track>
               <i class="fa fa-step-forward"></i>
+            </div>
+          </div>
+          <div class="controlling-options">
+            <div class="btn" repeat-music>
+              <i class="fa fa-repeat"></i>
+            </div>
+            <div class="btn" shuffle-music>
+              <i class="fa fa-random"></i>
             </div>
             <div class="btn btn-noclick">
               <span><span class="badge">{{ volume }}%</span></span>

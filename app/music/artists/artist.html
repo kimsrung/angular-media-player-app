@@ -150,7 +150,7 @@
                           </li>
                         </ul>
                       </div>
-                      <i class="fa fa-share action" title="Share to ..."></i>
+
                       <div class="btn-group">
                         <a type="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                           <i class="fa fa-list action" title="More Options..."></i>
@@ -158,6 +158,17 @@
 
                         <ul class="dropdown-menu" role="menu">
                           <li><a href="javascript:;" ng-click="generalPlaylist.showLyric(song)">Play with lyric</a></li>
+                          <li class="divider"></li>
+                          <li><a href="javascript:;"
+                                socialshare
+                                socialshare-provider="facebook"
+                                socialshare-text="Smart Music"
+                                socialshare-hashtags="smartMusic"
+                                socialshare-url="{{song.url}}">
+                                <i class="fa fa-facebook"></i>
+                                Share to facebook
+                              </a>
+                          </li>
                         </ul>
                       </div>
 

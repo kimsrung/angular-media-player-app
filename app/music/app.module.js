@@ -9,6 +9,7 @@
     "angularSoundManager",
     "ngDragDrop",
     'app.directives',
-    'pascalprecht.translate'
+    'pascalprecht.translate',
+    '720kb.socialshare'
   ]);
 })();

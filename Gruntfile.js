@@ -197,7 +197,7 @@ module.exports = function(grunt) {
                     'bower_components/angular-ui-tree/dist/angular-ui-tree.js',
                     'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
                     'bower_components/angular-soundmanager2/dist/angular-soundmanager2.min.js',
-                    'bower_components/angular-socialshare/dist/angular-socialshare.min.js',
+                    'bower_components/angularjs-socialshare/dist/angular-socialshare.min.js',
                     'bower_components/raphael/raphael-min.js',
                     'bower_components/jqvmap/dist/jquery.vmap.min.js',
                     'bower_components/angular-scroll/angular-scroll.min.js',

@@ -5,7 +5,7 @@
     "admin <kimsrung.lov@gmail.com>"
   ],
   "description": "An angular music template",
-  "main": "index.html",
+  "main": "../resources/views/index.html",
   "license": "MIT",
   "ignore": [
     "**/.*",

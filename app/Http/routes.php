@@ -13,16 +13,16 @@
 
 Route::get('/', function () {
     return view('index');
-    //return Redirect::to('dashboard');
+    return Redirect::to('dashboard');
 });
 
-/*Route::get('/{page}', function () {
+Route::get('/{page}', function () {
     return view('index');
 });
 
 Route::get('/{path}/{page}', function () {
     return view('index');
-});*/
+});
 
 /* get data */
 /*Route::get('/api/data/artists', 'Api@artists');

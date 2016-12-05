@@ -145,14 +145,20 @@ module.exports = function(grunt) {
         },
         cssmin: {
             combine: {
-                files: {
+                files: [{
                     'dist/css/main.css': [
                         'bower_components/dripicons/css/dripicons.css',
                         'bower_components/weather-icons/css/weather-icons.min.css',
                         'styles/fonts/music-icons/music-icons.css',
                         'styles/styles.css'
                     ]
-                }
+                  },
+                  {
+                    'dist/css/music.css': [
+                        'app/music/styles/music.css', 'app/music/styles/components/lyric-dialog.css'
+                    ]
+                  }
+                ]
             },
             add_banner: {
                 options: {

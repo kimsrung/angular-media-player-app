@@ -1,0 +1,148 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Oswald Light'), local('Oswald-Light'), url(http://fonts.gstatic.com/s/oswald/v11/l1cOQ90roY9yC7voEhngDBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Oswald Light'), local('Oswald-Light'), url(http://fonts.gstatic.com/s/oswald/v11/HqHm7BVC_nzzTui2lzQTDVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(http://fonts.gstatic.com/s/oswald/v11/dI-qzxlKVQA6TUC5RKSb3xJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(http://fonts.gstatic.com/s/oswald/v11/bH7276GfdCjMjApa_dkG6VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* khmer */
+@font-face {
+  font-family: 'Khmer';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Khmer'), url(http://fonts.gstatic.com/s/khmer/v9/EBPGAEwYbo6W1UGhSDiTYg.woff2) format('woff2');
+  unicode-range: U+1780-17FF, U+200B-200C, U+25CC;
+}
+
+body{
+	font-family: sans-serif,"Open Sans";
+}
+
+/* General */
+*::-moz-selection { 
+	background: #FE4365 none repeat scroll 0 0; 
+}
+*::selection { 
+	background: #FE4365 none repeat scroll 0 0;
+}
+.logo > a{
+	background: #008621 none repeat scroll 0 0
+}
+.color-primary, 
+.color-success, 
+.color-theme{
+	color: #008621;
+}
+.btn-primary,
+.bg-success, 
+a.bg-success, 
+a.bg-success:hover{
+	background-color: #008621;
+}
+.btn-primary.active, 
+.btn-primary:active, 
+.btn-primary:focus, 
+.btn-primary:hover, 
+.open > .btn-primary.dropdown-toggle,
+.btn-bordered-primary.active, 
+.btn-bordered-primary:active, 
+.btn-bordered-primary:focus, 
+.btn-bordered-primary:hover, 
+.open .btn-bordered-primary.dropdown-toggle{
+	background-color: #FE4365;
+}
+.btn-primary:active,
+.btn-primary:focus{
+	box-shadow: 0 0 1px 1px #FE4365;
+}
+.btn-bordered-primary{
+	border-color: #FE4365;
+}
+.page-front .btn-primary:active, 
+.page-front .btn-primary:focus, 
+.page-front .btn-primary:hover{
+	border-color: #FE4365;
+}
+.form-control:focus{
+	border-color: #008621;
+}
+.music-listing--queue .music-listing__songs .music-listing__row,
+.music-listing--queue .music-listing__songs .music-listing__row:hover .action{
+	color: #4D4D4D;
+}
+.music-listing--queue .music-listing__songs .music-listing__row.active{
+	background-color: #008621;
+	color: #fff;
+	border-radius: 0;
+}
+.music-listing--queue .music-listing__songs .music-listing__row.active .action{
+	color: #fff;
+}
+.music-listing .music-listing__songs .music-listing__row-actions .action:hover{
+	border-color: #FE4365;
+	background-color: #FE4365;
+	color: #fff;
+}
+.top-header .top-nav .list-notifications .list-notifications__item > a.bg-primary{
+	background: #008621 none repeat scroll 0 0;
+}
+#nav-container{
+	background: #fff;
+}
+.sidebar-nav-main .sidebar-nav-menu .nav-item .nav-link .label{
+	font-family: "Oswald",Arial,"Khmer","HelveticaNeue","Helvetica Neue","Helvetica",Helvetica,sans-serif;
+	font-weight: 400;
+	color: #4d4d4d;
+	font-size: 16px;
+	line-height: 12px;
+}
+.sidebar-nav-main .sidebar-nav-menu .nav-item ul .nav-link .label{
+	font-family: inherit;
+	font-size: 14px;
+	line-height: 16px;
+}
+.sidebar-nav-main .sidebar-nav-menu .nav-item .nav-link:hover,
+.sidebar-nav-main .sidebar-nav-menu .nav-item .nav-link:hover .label{
+	color: #008621;
+}
+.sidebar-nav-main .sidebar-nav-menu .nav-item.active .nav-link,
+.sidebar-nav-main .sidebar-nav-menu .nav-item.active .nav-link:hover .label{
+	background-color: #008621;
+	color: #fff;
+}
+.sidebar-nav-switch{
+	background: #008621 none repeat scroll 0 0;
+}
+.sidebar-nav-switch .btn-group.switch{
+	border-color: #fff;
+}
+.sidebar-nav-switch .switch.btn-group .btn.active, 
+.sidebar-nav-switch .switch.btn-group .btn:active{
+	background: #fe4365 none repeat scroll 0 0;
+    border-color: #fff;
+}

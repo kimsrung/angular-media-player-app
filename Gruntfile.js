@@ -150,7 +150,8 @@ module.exports = function(grunt) {
                         'bower_components/dripicons/css/dripicons.css',
                         'bower_components/weather-icons/css/weather-icons.min.css',
                         'styles/fonts/music-icons/music-icons.css',
-                        'styles/styles.css'
+                        'styles/styles.css',
+                        'styles/custom.css'
                     ]
                   },
                   {

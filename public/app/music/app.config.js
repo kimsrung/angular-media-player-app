@@ -35,7 +35,7 @@ config.$inject = [
 ]
 
 function config($urlRouterProvider, $stateProvider, $locationProvider, $translateProvider) {
-    // $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
 
     $urlRouterProvider.otherwise('/dashboard');
     $stateProvider

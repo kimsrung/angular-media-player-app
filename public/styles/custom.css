@@ -146,3 +146,7 @@ a.bg-success:hover{
 	background: #fe4365 none repeat scroll 0 0;
     border-color: #fff;
 }
+.dropdown-menu > li > a:focus, 
+.dropdown-menu > li > a:hover{
+	color: #FE4365;
+}

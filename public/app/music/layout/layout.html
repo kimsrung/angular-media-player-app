@@ -1,14 +1,11 @@
 <div>
   <sound-manager></sound-manager>
 
-  <div ng-hide="generalPlaylist.checkIfOwnPage()" ng-cloak="" class="no-print">
-    <aside ng-include=" 'app/music/layout/navigation.html' " id="nav-container"></aside>
-  </div>
-
   <div class="view-container">
 
     <div ng-hide="generalPlaylist.checkIfOwnPage()" ng-cloak="" class="no-print">
       <section ng-include=" 'app/music/layout/header.html' " id="header" class="top-header"></section>
+      <aside ng-include=" 'app/music/layout/navigation.html' " id="nav-container"></aside>
     </div>
     <lyric-dialog></lyric-dialog>
     <section ui-view="" id="content" class="animate-fade-up" ng-class="{fixed:generalPlaylist.checkIfFixedPage()}"></section>

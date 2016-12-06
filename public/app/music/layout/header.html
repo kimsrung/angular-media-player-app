@@ -3,7 +3,12 @@
 <header class="clearfix">
 
 <div class="top-nav">
-<ul class="nav-left list-unstyled" ng-controller="ActionsCtrl as actions">
+  <span class="logo hidden-xs">
+    <a class="logo-link" ui-sref="layout.dashboard">
+      <img src="images/logo.png">
+    </a>
+  </span>
+  <ul class="nav-left list-unstyled" ng-controller="ActionsCtrl as actions">
     <li class="visible-xs">
         <!-- needs to be put after logo to make it working-->
         <div class="menu-button" toggle-off-canvas>
@@ -18,7 +23,7 @@
         {{lang.name}}
       </a>
     </li>
-</ul>
+  </ul>
 
 <ul class="nav-button pull-right list-unstyled">
     <li class="dropdown text-small nav-profile">

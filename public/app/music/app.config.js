@@ -45,18 +45,7 @@ function config($urlRouterProvider, $stateProvider, $locationProvider, $translat
       controllerAs: 'generalPlaylist'
     });
 
-    $translateProvider.translations('en', {
-      ARTISTS: 'Artists',
-      ALBUMS: 'Albums',
-      DASHBOARD: 'Dashboard',
-      GENRES: 'genres'
-    });
-    $translateProvider.translations('kh', {
-      ARTISTS: 'សិល្បករ',
-      ALBUMS: 'អាល់ប៊ុម',
-      DASHBOARD: 'ផ្ទាំងគ្រប់គ្រង',
-      GENRES: 'ប្រភេទ'
-    });
     $translateProvider.preferredLanguage('en');
+    $translateProvider.useLoader('translationLoader');
 }
 })();

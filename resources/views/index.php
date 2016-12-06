@@ -32,28 +32,9 @@
 <!--Uncomment for deployment using Grunt-->
 <script type="text/javascript" src="dist/js/app.js"></script>
 
-<!--Uncomment for deployment without Grunt-->
-
-<!-- <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="scripts/gmap.js"></script>
-<script type="text/javascript" src="bower_components/slimScroll/jquery.slimscroll.min.js"></script>
-<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
-<script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
-<script type="text/javascript" src="bower_components/angular-aria/angular-aria.min.js"></script>
-<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-<script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
-
-<script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-<script type="text/javascript" src="bower_components/angular-media-player/dist/angular-media-player.min.js"></script>
-<script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
-<script type="text/javascript" src="bower_components/jqvmap/dist/jquery.vmap.min.js"></script>
-<script type="text/javascript" src="bower_components/html5shiv/dist/html5shiv.min.js"></script>
-<script src="bower_components/angular-soundmanager2/dist/angular-soundmanager2.min.js"></script>
-<script type="text/javascript" src="scripts/angular-dragdrop.js"></script>
-<script type="text/javascript" src="scripts/extras.js"></script>
- -->
 <script type="text/javascript" src="app/music/app.module.js"></script>
 <script type="text/javascript" src="app/music/app.config.js"></script>
+<script type="text/javascript" src="app/music/app.factory.js"></script>
 
 <script type="text/javascript" src="app/music/layout/layout.controller.js"></script>
 <script type="text/javascript" src="app/music/layout/navigation.controller.js"></script>
@@ -91,7 +72,6 @@
 <!-- Shared -->
 <script type="text/javascript" src="app/music/shared/loggit.factory.js"></script>
 <script type="text/javascript" src="app/music/shared/highlight-active.directive.js"></script>
-<script type="text/javascript" src="app/directives.js"></script>
 
 <!-- Components -->
 <script type="text/javascript" src="app/components/lyric-dialog/lyric-dialog.component.js"></script>

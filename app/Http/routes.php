@@ -12,7 +12,6 @@
 */
 
 Route::get('/', function () {
-    // return view('index');
     return Redirect::to('dashboard');
 });
 

@@ -252,7 +252,7 @@ module.exports = function(grunt) {
                     archive: 'dist/<%= pkg.name %>-<%= pkg.version %>.zip'
                 },
                 files: [{
-                    src: [ 'index.html' ],
+                    src: [ '../resources/views/index.php' ],
                     dest: '/'
                 }, {
                     src: [ 'app/**' ],

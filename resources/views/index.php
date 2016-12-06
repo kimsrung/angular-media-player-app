@@ -2,7 +2,7 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" ng-app="app.music"> <!--<![endif]-->
 <head>
-  <base href="public">
+  <base href="/angular-media-player-app/public/">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Groovy - AngularJS theme</title>

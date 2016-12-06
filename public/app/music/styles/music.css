@@ -16,3 +16,9 @@
   cursor: pointer;
   color: #1FAE5B;
 }
+.logo >a.logo-link {
+  width: 90px;
+}
+.logo-link img{
+  width: 100%;
+}

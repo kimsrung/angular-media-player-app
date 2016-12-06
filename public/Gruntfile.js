@@ -193,7 +193,6 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: ['bower_components/bootstrap/dist/js/bootstrap.min.js',
-                    'scripts/gmap.js',
                     'bower_components/slimScroll/jquery.slimscroll.min.js',
                     'bower_components/angular/angular.min.js',
                     'bower_components/angular-animate/angular-animate.min.js',
@@ -225,7 +224,7 @@ module.exports = function(grunt) {
             server: {
                 options: {
                     hostname: 'localhost',
-                    port: 8080
+                    port: 8880
                 }
             }
         },

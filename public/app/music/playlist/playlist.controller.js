@@ -6,21 +6,22 @@
     .controller('UserPlayListCtrl', UserPlayListCtrl);
 
   UserPlayListCtrl.$inject = [
-    '$stateParams',
+    '$state',
     'PlayListSrv',
     'navigationMenuService'
   ]
 
-  function UserPlayListCtrl($stateParams, PlayListSrv, navigationMenuService) {
+  function UserPlayListCtrl($state, PlayListSrv, navigationMenuService) {
     var vm = this;
     var UserPlaylistVar = [];
 
     vm.PlayListSrv = PlayListSrv;
+    vm.playlistUrl = $state.href($state.current.name, $state.params, {absolute: true});
 
     activate();
 
     function activate() {
-      PlayListSrv.getPlaylist($stateParams.title, function (response) {
+      PlayListSrv.getPlaylist($state.params.title, function (response) {
         vm.playlistName = response.name;
         vm.playlistImage = response.image;
         vm.playlistBanner = response.banner;

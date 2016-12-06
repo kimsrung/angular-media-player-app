@@ -90,6 +90,7 @@
 
 <!-- Shared -->
 <script type="text/javascript" src="app/music/shared/loggit.factory.js"></script>
+<script type="text/javascript" src="app/music/shared/highlight-active.directive.js"></script>
 <script type="text/javascript" src="app/directives.js"></script>
 
 <!-- Components -->

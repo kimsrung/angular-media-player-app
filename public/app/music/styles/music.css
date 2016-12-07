@@ -52,3 +52,14 @@
 .panel-profile .panel-heading .profile_info .profile-image img{
   border-color: #008621;
 }
+
+.page-overlay {
+  z-index: 0;
+  opacity: 0.6;
+  background-color: #aaa;
+  position: fixed;
+  left: 240px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}

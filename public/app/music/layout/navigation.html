@@ -1,9 +1,7 @@
 <div id="nav-wrapper" ng-controller="NavCtrl as navigation">
-
   <div class="sidebar-nav-switch">
-
+    <div class="page-overlay hidden" toggle-off-canvas></div>
     <div class="btn-group switch">
-
       <a class="btn main-nav-link home" ng-class="{active:navigation.navigationState.menu}" data-nav-section="home" ng-click="navigation.SwitchToMenu()">
         <span class="label">BROWSE</span>
       </a>

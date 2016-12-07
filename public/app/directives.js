@@ -104,7 +104,7 @@ angular.module("app.directives", []).directive("imgHolder", [
             return {
                 link: function(scope, ele) {
                     return ele.on("click", function() {
-                        return $("#app").toggleClass("on-canvas").toggleClass("nav-min");
+                        return $("#app").toggleClass("on-canvas").toggleClass("nav-min"), $(".page-overlay").toggleClass("hidden");
                     });
                 }
             };

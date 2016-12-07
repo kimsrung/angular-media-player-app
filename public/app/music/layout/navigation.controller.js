@@ -13,13 +13,15 @@
     var vm = this;
 
     vm.navigationState = navigationMenuService;
+    vm.SwitchToMenu = SwitchToMenu;
+    vm.SwitchToPlaylist = SwitchToPlaylist;
 
-    vm.SwitchToMenu = function () {
+    function SwitchToMenu() {
       navigationMenuService.menu = true;
       navigationMenuService.playlist = false;
     };
 
-    vm.SwitchToPlaylist = function () {
+    function SwitchToPlaylist() {
       navigationMenuService.menu = false;
       navigationMenuService.playlist = true;
     };

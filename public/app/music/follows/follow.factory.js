@@ -3,30 +3,30 @@
 
   angular
     .module('app.music')
-    .factory('AlbumsListingSrv', AlbumsListingSrv);
+    .factory('FollowSrv', FollowSrv);
 
-  AlbumsListingSrv.$inject = [
+  FollowSrv.$inject = [
     '$http'
   ]
 
-  function AlbumsListingSrv($http) {
+  function FollowSrv($http) {
     var albums = [];
     /**************************
      Provides a way to create a new playlist
      **************************/
 
-    var AlbumListingObj = {
-      getAlbums: getAlbums
+    var FollowObj = {
+      getFollows: getFollows
     };
 
-    return AlbumListingObj;
+    return FollowObj;
 
-    function getAlbums(callback){
+    function getFollows(callback){
       $http.get('dist/data/albums.json').success(function(data) {
 
         albums = data;
 
-        AlbumListingObj.albums = albums;
+        FollowObj.albums = albums;
         callback(data);
 
       });

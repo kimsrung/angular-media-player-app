@@ -11,11 +11,24 @@
 
   function config($stateProvider) {
     $stateProvider
-    .state('layout.albums', {
-      url: '/albums',
-      templateUrl: 'app/music/albums/albums.html',
-      controller: 'AlbumsCtrl',
-      controllerAs: 'albums'
+    .state('layout.follows', {
+      url: '/follows',
+      controller: 'FollowsCtrl',
+      controllerAs: 'follows',
+      templateUrl: 'app/music/follows/follows.html'
+    })
+    .state('layout.follows.detail', {
+      views: {
+          'albums': {
+            templateUrl: 'app/music/follows/albums.html'
+          },
+          'artist': {
+            templateUrl: 'app/music/follows/artist.html'
+          },
+          'playlists': {
+            templateUrl: 'app/music/follows/playlists.html'
+          }
+        }
     })
   }
 })();

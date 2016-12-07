@@ -3,21 +3,23 @@
 
   angular
     .module('app.music')
-    .controller('AlbumsCtrl', AlbumsCtrl);
+    .controller('FollowsCtrl', FollowsCtrl);
 
-  AlbumsCtrl.$inject = [
+  FollowsCtrl.$inject = [
     '$scope',
-    'AlbumsListingSrv'
+    '$state',
+    'FollowSrv'
   ]
 
-  function AlbumsCtrl($scope, AlbumsListingSrv) {
+  function FollowsCtrl($scope, $state, FollowSrv) {
     var vm = this;
 
     activate();
 
     function activate() {
-      AlbumsListingSrv.getAlbums(function(data) {
+      FollowSrv.getFollows(function(data) {
         vm.data = data;
+        $state.go('layout.follows.detail');
       // no need to read data because its binded to $scope.AlbumsSrv
       // You can however process something only after the data comes back
       });

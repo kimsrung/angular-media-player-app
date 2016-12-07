@@ -40,7 +40,7 @@
 
                       <div class="list-item__wrap">
 
-                        <div class="list-item__image">
+                        <div class="list-item__image" ui-sref="layout.artist({title: artistItem.url_name})">
                           <img ng-src="{{artistItem.image}}"/>
                           <div class="list-item__play">
                             <a class="list-item__play-button" ui-sref="layout.artist({title: artistItem.url_name})">
@@ -82,7 +82,7 @@
 
                       <div class="list-item__wrap">
 
-                        <div class="list-item__image">
+                        <div class="list-item__image" ui-sref="layout.artist({title: album.url_name})">
                           <img ng-src="{{album.image}}"/>
                           <div class="list-item__play">
                             <a class="list-item__play-button" ui-sref="layout.artist({title: album.url_name})">

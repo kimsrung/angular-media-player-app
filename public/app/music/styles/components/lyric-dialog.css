@@ -21,3 +21,14 @@
 .lyric-dialog-content .lyric-text span:hover {
   cursor: pointer;
 }
+
+.lyric-dialog .page-overlay {
+  z-index: 0;
+  opacity: 0.8;
+  background-color: #aaa;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}

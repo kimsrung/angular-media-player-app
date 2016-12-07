@@ -66,7 +66,14 @@ module.exports = function(grunt) {
                   cwd: 'bower_components/bootstrap/dist/css',
                   src: ['bootstrap-theme.min.css'],
                   dest: 'dist/css'
-                },
+                },/*{
+                  //for Owl slider
+                  expand: true,
+                  dot: true,
+                  cwd: 'bower_components/owl.carousel/dist/assets',
+                  src: ['owl.carousel.min.css', 'owl.theme.default.min.css'],
+                  dest: 'dist/css'
+                },*/
                 {
                   //for dripicons fonts
                   expand: true,
@@ -149,6 +156,8 @@ module.exports = function(grunt) {
                     'dist/css/main.css': [
                         'bower_components/dripicons/css/dripicons.css',
                         'bower_components/weather-icons/css/weather-icons.min.css',
+                        'bower_components/owl.carousel/dist/assets/owl.carousel.min.css',
+                        'bower_components/owl.carousel/dist/assets/owl.theme.default.min.css',
                         'styles/fonts/music-icons/music-icons.css',
                         'styles/styles.css',
                         'styles/custom.css'
@@ -192,8 +201,7 @@ module.exports = function(grunt) {
                 '<%= grunt.template.today("yyyy-mm-dd") %> */'
             },
             dist: {
-                src: ['bower_components/bootstrap/dist/js/bootstrap.min.js',
-                    'scripts/gmap.js',
+                src: ['bower_components/bootstrap/dist/js/bootstrap.min.js',                
                     'bower_components/slimScroll/jquery.slimscroll.min.js',
                     'bower_components/angular/angular.min.js',
                     'bower_components/angular-animate/angular-animate.min.js',
@@ -209,6 +217,8 @@ module.exports = function(grunt) {
                     'bower_components/jqvmap/dist/jquery.vmap.min.js',
                     'bower_components/angular-scroll/angular-scroll.min.js',
                     'bower_components/html5shiv/dist/html5shiv.min.js',
+                    'bower_components/owl.carousel/dist/owl.carousel.min.js',
+                    'bower_components/angular-owl-carousel-directive/dist/angular-owl-carousel-directive.min.js',
                     'scripts/angular-dragdrop.js',
                     'scripts/extras.js',
                     'bower_components/underscore/underscore-min.js',
@@ -232,7 +242,7 @@ module.exports = function(grunt) {
 
         watch: {
             dev: {
-                files: [ 'Gruntfile.js', 'app/*.js', '*.html','styles/*.scss' ],
+                files: [ 'Gruntfile.js', 'app/*.js', '*.html','styles/*.scss','styles/*.css' ],
                 tasks: [ 'jshint','html2js:dist','sass','copy:main', 'concat:dist', 'clean:temp','cssmin' ],
                 options: {
                     atBegin: true

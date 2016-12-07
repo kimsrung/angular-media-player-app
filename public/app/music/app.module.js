@@ -10,6 +10,7 @@
     "ngDragDrop",
     'app.directives',
     'pascalprecht.translate',
-    '720kb.socialshare'
+    '720kb.socialshare',
+    'angular-owl-carousel-directive'
   ]);
 })();

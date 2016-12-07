@@ -24,7 +24,7 @@
 
       </section>
 
-      <section>
+      <section data-ng-controller="ArtistListingCtrl as artistListing">
         <section class="panel panel-default panel-default-clean">
           <div class="panel-body panel-body--dashboard">
 
@@ -33,125 +33,252 @@
 
                 <div class="divider"></div>
 
-                <div data-ng-controller="ArtistListingCtrl as artistListing">
+                <div>
                   <div class="row music-covers-listing minified">
-
-                    <div data-ng-repeat="artistItem in artistListing.data" class="col-md-3">
-
-                      <div class="list-item__wrap">
-
-                        <div class="list-item__image">
-                          <img ng-src="{{artistItem.image}}"/>
-                          <div class="list-item__play">
-                            <a class="list-item__play-button" ui-sref="layout.artist({title: artistItem.url_name})">
-                              <i class="fa fa-2x fa-stumbleupon">
-
-                              </i>
-                            </a>
-                          </div>
-                        </div>
-
-                        <div class="list-item__name">
-                          <h6>
-                            {{artistItem.name}}
-                          </h6>
-                        </div>
-
-                        <div class="list-item__style">
-                          <div class="artist-genre" ng-repeat="genre in artistItem.genre">
-                            <span>{{genre}}</span>
-                          </div>
-                        </div>
-                      </div>
-
+                    
+                    <div class="page-header recommend-header">
+                      <a ui-sref="layout.playlist({title: 'greatest-heats'})">
+                        <h3 class="link-animated">Curate playlist <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></h3>
+                      </a>
                     </div>
-
-                  </div>
-                </div>
-
-              </tab>
-
-              <tab heading="New albums">
-
-                <div class="divider"></div>
-
-                <div data-ng-controller="AlbumsCtrl as albums">
-                  <div class="row music-covers-listing minified">
-
-                    <div data-ng-repeat="album in albums.data" class="col-md-3">
-
-                      <div class="list-item__wrap">
-
-                        <div class="list-item__image">
-                          <img ng-src="{{album.image}}"/>
-                          <div class="list-item__play">
-                            <a class="list-item__play-button" ui-sref="layout.artist({title: album.url_name})">
-                              <i class="fa fa-2x fa-stumbleupon">
-
-                              </i>
-                            </a>
-                          </div>
-                        </div>
-
-                        <div class="list-item__name">
-                          <h6 class="color-primary">
-                            {{album.artist}}
-                          </h6>
-                          <h6>
-                            {{album.name}}
-                          </h6>
-                        </div>
-
-                        <div class="list-item__style">
-                          <div class="artist-genre" ng-repeat="genre in album.genre">
-                            <span>{{genre}}</span>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </tab>
-
-              <tab heading="Genres">
-
-                <div class="divider"></div>
-
-                <div data-ng-controller="GenresCtrl as genres">
-
-                  <div class="row music-genres-listing">
-
-                    <div data-ng-repeat="genre in genres.data" class="col-md-3">
-
-                      <div class="list-item__wrap">
-
-                        <a ui-sref="layout.artist({title: genre.url_name})">
-                          <div class="list-item__image">
-                            <img ng-src="{{genre.image}}" alt="genre image"/>
-                            <div class="list-item__name">
-                              <div class="genre-icon">
-                                <i class="{{genre.icon}}">
-
-                                </i>
-                              </div>
-                              <h5>
-                                {{genre.name}}
-                              </h5>
-                            </div>
-
-                          </div>
+                    <owl-carousel owl-items="artistListing.owlItems" owl-options="artistListing.owlOptions">
+                      <div class="item">
+                        <a ui-sref="layout.artist({title: item.url_name})">
+                          <img ng-src="{{item.image}}"/>
                         </a>
+                        <h4 class="title"><a ui-sref="layout.artist({title: item.url_name})">Title Song {{index}}</a> 
+                        <br><small>Sub title song {{index}}</small></h4>
+                        <div class="item-play-button">
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </a>
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                          </a>
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                          </a>
+                        </div>
                       </div>
-
-                    </div>
-
+                    </owl-carousel>
                   </div>
-
                 </div>
+              </tab>
 
+              <tab heading="New Artists">
+
+                <div class="divider"></div>
+
+                <div>
+                  <div class="row music-covers-listing minified">
+                    
+                    <div class="page-header recommend-header">
+                      <a ui-sref="layout.playlist({title: 'greatest-heats'})">
+                        <h3 class="link-animated">New Release <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></h3>
+                      </a>
+                    </div>
+                    <owl-carousel owl-items="artistListing.owlItems" owl-options="artistListing.owlOptions">
+                      <div class="item">
+                        <a ui-sref="layout.artist({title: item.url_name})">
+                          <img ng-src="{{item.image}}"/>
+                        </a>
+                        <h4 class="title"><a ui-sref="layout.artist({title: item.url_name})">Title Song {{index}}</a> 
+                        <br><small>Sub title song {{index}}</small></h4>
+                        <div class="item-play-button">
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </a>
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                          </a>
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </owl-carousel>
+                  </div>
+                </div>
+              </tab>
+
+              <tab heading="New Artists">
+
+                <div class="divider"></div>
+
+                <div>
+                  <div class="row music-covers-listing minified">
+                    
+                    <div class="page-header recommend-header">
+                      <a ui-sref="layout.playlist({title: 'greatest-heats'})">
+                        <h3 class="link-animated">Latest upload <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></h3>
+                      </a>
+                    </div>
+                    <owl-carousel owl-items="artistListing.owlItems" owl-options="artistListing.owlOptions">
+                      <div class="item">
+                        <a ui-sref="layout.artist({title: item.url_name})">
+                          <img ng-src="{{item.image}}"/>
+                        </a>
+                        <h4 class="title"><a ui-sref="layout.artist({title: item.url_name})">Title Song {{index}}</a> 
+                        <br><small>Sub title song {{index}}</small></h4>
+                        <div class="item-play-button">
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </a>
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                          </a>
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </owl-carousel>
+                  </div>
+                </div>
+              </tab>
+
+              <tab heading="New Artists">
+
+                <div class="divider"></div>
+
+                <div>
+                  <div class="row music-covers-listing minified">
+                    
+                    <div class="page-header recommend-header">
+                      <a ui-sref="layout.playlist({title: 'greatest-heats'})">
+                        <h3 class="link-animated">Top Downloads <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></h3>
+                      </a>
+                    </div>
+                    <owl-carousel owl-items="artistListing.owlItems" owl-options="artistListing.owlOptions">
+                      <div class="item">
+                        <a ui-sref="layout.artist({title: item.url_name})">
+                          <img ng-src="{{item.image}}"/>
+                        </a>
+                        <h4 class="title"><a ui-sref="layout.artist({title: item.url_name})">Title Song {{index}}</a> 
+                        <br><small>Sub title song {{index}}</small></h4>
+                        <div class="item-play-button">
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </a>
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                          </a>
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </owl-carousel>
+                  </div>
+                </div>
+              </tab>
+
+              <tab heading="New Artists">
+
+                <div class="divider"></div>
+
+                <div>
+                  <div class="row music-covers-listing minified">
+                    
+                    <div class="page-header recommend-header">
+                      <a ui-sref="layout.playlist({title: 'greatest-heats'})">
+                        <h3 class="link-animated">Artist of the months <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></h3>
+                      </a>
+                    </div>
+                    <owl-carousel owl-items="artistListing.owlItems" owl-options="artistListing.owlOptions">
+                      <div class="item">
+                        <a ui-sref="layout.artist({title: item.url_name})">
+                          <img ng-src="{{item.image}}"/>
+                        </a>
+                        <h4 class="title"><a ui-sref="layout.artist({title: item.url_name})">Title Song {{index}}</a> 
+                        <br><small>Sub title song {{index}}</small></h4>
+                        <div class="item-play-button">
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </a>
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                          </a>
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </owl-carousel>
+                  </div>
+                </div>
+              </tab>
+
+              <tab heading="New Artists">
+
+                <div class="divider"></div>
+
+                <div>
+                  <div class="row music-covers-listing minified">
+                    
+                    <div class="page-header recommend-header">
+                      <a ui-sref="layout.artists">
+                        <h3 class="link-animated">Artist <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></h3>
+                      </a>
+                    </div>
+                    <owl-carousel owl-items="artistListing.owlItems" owl-options="artistListing.owlOptions">
+                      <div class="item">
+                        <a ui-sref="layout.artist({title: item.url_name})">
+                          <img ng-src="{{item.image}}"/>
+                        </a>
+                        <h4 class="title"><a ui-sref="layout.artist({title: item.url_name})">Title Song {{index}}</a> 
+                        <br><small>Sub title song {{index}}</small></h4>
+                        <div class="item-play-button">
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </a>
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                          </a>
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </owl-carousel>
+                  </div>
+                </div>
+              </tab>
+
+              <tab heading="New Artists">
+
+                <div class="divider"></div>
+
+                <div>
+                  <div class="row music-covers-listing minified">
+                    
+                    <div class="page-header recommend-header">
+                      <a ui-sref="layout.albums">
+                        <h3 class="link-animated">Album <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></h3>
+                      </a>
+                    </div>
+                    <owl-carousel owl-items="artistListing.owlItems" owl-options="artistListing.owlOptions">
+                      <div class="item">
+                        <a ui-sref="layout.artist({title: item.url_name})">
+                          <img ng-src="{{item.image}}"/>
+                        </a>
+                        <h4 class="title"><a ui-sref="layout.artist({title: item.url_name})">Title Song {{index}}</a> 
+                        <br><small>Sub title song {{index}}</small></h4>
+                        <div class="item-play-button">
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </a>
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                          </a>
+                          <a class="btn-icon btn-icon-sm btn-github">
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </owl-carousel>
+                  </div>
+                </div>
               </tab>
 
             </tabset>

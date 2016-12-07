@@ -37,12 +37,17 @@
 <script type="text/javascript" src="app/music/app.factory.js"></script>
 
 <script type="text/javascript" src="app/music/layout/layout.controller.js"></script>
-<script type="text/javascript" src="app/music/layout/navigation.controller.js"></script>
-<script type="text/javascript" src="app/music/layout/action.controller.js"></script>
-<script type="text/javascript" src="app/music/layout/navigation.factory.js"></script>
+<script type="text/javascript" src="app/music/dashboards/dashboard.route.js"></script>
 <script type="text/javascript" src="app/music/layout/action.controller.js"></script>
 
-<script type="text/javascript" src="app/music/dashboards/dashboard.route.js"></script>
+<script type="text/javascript" src="app/music/layout/navigation.controller.js"></script>
+<script type="text/javascript" src="app/music/layout/navigation.factory.js"></script>
+
+
+<!-- Profile -->
+<script type="text/javascript" src="app/music/profile/profile.route.js"></script>
+<script type="text/javascript" src="app/music/profile/profile.controller.js"></script>
+<script type="text/javascript" src="app/music/profile/profile.factory.js"></script>
 
 <!-- Albums -->
 <script type="text/javascript" src="app/music/albums/albums.route.js"></script>

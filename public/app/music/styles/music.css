@@ -14,7 +14,7 @@
 }
 .top-header .top-nav .nav-left>li>a.billingual:hover {
   cursor: pointer;
-  color: #1FAE5B;
+  color: #008621;
 }
 .logo {
   display: inline-block;
@@ -47,4 +47,8 @@
 
 .top-header .top-nav {
   padding: 0;
+}
+
+.panel-profile .panel-heading .profile_info .profile-image img{
+  border-color: #008621;
 }

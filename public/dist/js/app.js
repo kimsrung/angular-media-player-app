@@ -5675,32 +5675,12 @@ angular.module("app.directives", []).directive("imgHolder", [
                 }
             };
         }
-    ]).directive("highlightActive", [
-        function() {
-            return {
-                controller: ["$scope", "$element", "$attrs", "$location",
-                    function($scope, $element, $attrs, $location) {
-                        var highlightActive, links, path;
-                        return links = $element.find("a"), path = function() {
-                            return $location.path();
-                        }, highlightActive = function(links, path) {
-                            return path = "#" + path, angular.forEach(links, function(link) {
-                                var $li, $link, href;
-                                return $link = angular.element(link), $li = $link.parent("li"), href = $link.attr("href"), $li.hasClass("active") && $li.removeClass("active"), 0 === path.indexOf(href) ? $li.addClass("active") : void 0;
-                            });
-                        }, highlightActive(links, $location.path()), $scope.$watch(path, function(newVal, oldVal) {
-                            return newVal !== oldVal ? highlightActive(links, $location.path()) : void 0;
-                        });
-                    }
-                ]
-            };
-        }
     ]).directive("toggleOffCanvas", [
         function() {
             return {
                 link: function(scope, ele) {
                     return ele.on("click", function() {
-                        return $("#app").toggleClass("on-canvas").toggleClass("nav-min");
+                        return $("#app").toggleClass("on-canvas").toggleClass("nav-min"), $(".page-overlay").toggleClass("hidden");
                     });
                 }
             };

@@ -201,7 +201,7 @@ module.exports = function(grunt) {
                 '<%= grunt.template.today("yyyy-mm-dd") %> */'
             },
             dist: {
-                src: ['bower_components/bootstrap/dist/js/bootstrap.min.js',                
+                src: ['bower_components/bootstrap/dist/js/bootstrap.min.js',
                     'bower_components/slimScroll/jquery.slimscroll.min.js',
                     'bower_components/angular/angular.min.js',
                     'bower_components/angular-animate/angular-animate.min.js',
@@ -235,7 +235,7 @@ module.exports = function(grunt) {
             server: {
                 options: {
                     hostname: 'localhost',
-                    port: 8080
+                    port: 8880
                 }
             }
         },

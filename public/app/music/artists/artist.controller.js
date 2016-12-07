@@ -7,14 +7,14 @@
 
   ArtistCtrl.$inject = [
     '$scope',
-    '$stateParams',
+    '$state',
     'ArtistSrv',
     'PlayListSrv',
     'navigationMenuService',
     'loggit'
   ]
 
-  function ArtistCtrl($scope, $stateParams, ArtistSrv, PlayListSrv, navigationMenuService, loggit) {
+  function ArtistCtrl($scope, $state, ArtistSrv, PlayListSrv, navigationMenuService, loggit) {
     var vm = this;
     var artistPlaylistVar = [];
     var artistPlaylistAlbums = [];
@@ -25,12 +25,13 @@
     vm.FullList = false;
     vm.following = "Follow artist";
     vm.following_class = "btn-default";
+    vm.artistUrl = $state.href($state.current.name, $state.params, {absolute: true});
 
     activate();
 
     function activate() {
 
-      ArtistSrv.getArtist($stateParams.title, function (response) {
+      ArtistSrv.getArtist($state.params.title, function (response) {
         vm.artistName = response.name;
         vm.artistImage = response.image;
         vm.artistBanner = response.banner;

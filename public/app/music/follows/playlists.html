@@ -1,0 +1,27 @@
+<div class="row music-genres-listing">
+
+  <div data-ng-repeat="playlist in follows.data" class="col-md-3">
+
+    <div class="list-item__wrap">
+
+      <a ui-sref="layout.artist({title: playlist.url_name})">
+        <div class="list-item__image">
+          <img ng-src="{{playlist.image}}" alt="genre image"/>
+          <div class="list-item__name">
+            <div class="genre-icon">
+              <i class="{{playlist.icon}}">
+
+              </i>
+            </div>
+            <h5>
+              {{playlist.name}}
+            </h5>
+          </div>
+
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+</div>

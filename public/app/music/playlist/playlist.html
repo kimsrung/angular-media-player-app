@@ -96,10 +96,10 @@
                     </div>
 
                     <div class="play-pause-button" ng-show=" currentPlaying.id == song.id">
-                        <button class="btn btn-primary" ng-show="isPlaying" pause-music>
+                        <button class="btn btn-primary" ng-if="isPlaying" pause-music>
                           <i class="fa fa-pause"></i>
                         </button>
-                        <button class="btn btn-primary" ng-hide="isPlaying" play-music>
+                        <button class="btn btn-primary" ng-if="!isPlaying" play-music>
                           <i class="fa fa-play-circle"></i>
                         </button>
                     </div>
